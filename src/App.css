@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-*{
-    /* border: 1px solid greenyellow; */
-}
 body{
     @apply font-poppins;
     text-transform: ;
