@@ -19,8 +19,8 @@ const footer = () => {
       ];
       const footerIcons = [
         {img: <FaLinkedinIn />, href: "#linkedIn"},
-        {img: <RiTwitterXFill />, href: "#twitter"},
-        {img: <FaFacebookF />, href: "#linkedIn"}
+        {img: <FaFacebookF />, href: "#linkedIn"},
+        {img: <RiTwitterXFill />, href: "#twitter"}
       ]
   return (
     <div className='bg-[#003547] flex flex-col py-12'>
@@ -71,8 +71,8 @@ const footer = () => {
           </div>
       </div>
 
-      <div className=" text-white lg:mt-20 mt-15 px-16 justify-center">
-       <h4 className='lg:border-t-2 border-t-[#fefefe] opacity-50 pt-7 text-center'>© 2024 Mental Health. All rights reserved</h4>
+      <div className=" text-white lg:mt-20 mt-15 px-10 justify-center">
+       <h4 className='lg:border-t-2 border-t-[#fefefe] opacity-50 pt-7 text-center '>© 2024 Mental Health. All rights reserved</h4>
       </div>
     </div>
   );
