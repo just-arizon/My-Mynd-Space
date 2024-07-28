@@ -103,7 +103,7 @@ export default function NavBar() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden w-full bg-white shadow-md fixed top-16 z-50 container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="md:hidden w-full bg-white shadow-md fixed top-16 z-50 container mx-auto sm:px-6 lg:px-8">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 w-full">
             {navItems.map((item, index) => (
               <Link

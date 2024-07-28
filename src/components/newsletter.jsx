@@ -12,7 +12,7 @@ const newsletter = () => {
         <div className="container">
           <div>
             <div className="flex lg:w-3/4">
-              <h4 className="font-semibold text-2xl mb-5">
+              <h4 className="font-bold text-2xl mb-5">
                 Subscribe to our newsletter today !
               </h4>
               <div className="px-5 relative">
@@ -39,7 +39,7 @@ const newsletter = () => {
                 <div className=" lg:w-5/6 h-15">
                     <Input
                       type="email"
-                      label="Email"
+                      label="your email address"
                       className=" py-2 h-full  w-full rounded  text-sm"
                     />
                 </div>
