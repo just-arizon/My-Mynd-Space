@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Logo from "../assets/Mymindspace.svg";
-import Button from "@mui/material/Button";
+import {Button, ButtonGroup} from "@nextui-org/button";
+import {Link} from "@nextui-org/react";
 
 const navItems = [
   { name: "About Us", href: "#home" },
@@ -27,19 +28,20 @@ const MyNavbar = () => {
           </div>
           <div className="hidden md:flex items-center flex-1 justify-center lg:gap-20 gap-8 whitespace-nowrap">
             {navItems.map((item, index) => (
-              <a
+              <Link
                 key={index}
                 href={item.href}
                 className="text-gray-800 hover:text-gray-600  py-2 rounded-md text-sm font-medium"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
           <div className="flex items-center flex-1 justify-end">
             <div className="hidden md:inline-block  ">
-              <Button>
-                <a href="#cta">Get Started</a>
+              <Button className="bg-[#81D4FA] py-2 px-6 outline-none rounded-lg">
+                <a href="#cta" className="text-sm">
+                    Get Started</a>
               </Button>
             </div>
             <div className="md:hidden -mr-2 flex">
