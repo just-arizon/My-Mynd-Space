@@ -15,7 +15,7 @@ const about = () => {
       <div className="bg-[#F2F6F9] py-5 pl-5 rounded-md flex flex-col lg:flex-row items-center">
         <div className="flex flex-1  flex-col gap-5">
           <h4 className="font-bold text-2xl mb-5">About Us</h4>
-          <div className=" lg:w-9/12">
+          <div className=" lg:w-11/12">
             <p className="pr-5">
               At MymindSpace, our commitment to your mental wellness drives
               everything we do. From our humble beginnings, we've grown into a
@@ -32,8 +32,8 @@ const about = () => {
           </div>
         </div>
 
-        <div className="hidden lg:block about_img flex flex-1 justify-end">
-          <div><img src={AboutImg} alt="" className="lg:w-4/6" /></div>
+        <div className="hidden lg:block about_img flex relative ">
+          <div><img src={AboutImg} alt="" className="lg:w-9/12 relative lg:left-36" /></div>
         </div>
       </div>
     </div>
