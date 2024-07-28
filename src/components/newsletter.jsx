@@ -7,16 +7,16 @@ import {Input} from "@nextui-org/input";
 
 const newsletter = () => {
   return (
-    <div className="flex lg:flex-row flex-col  py-5">
+    <div className="flex lg:flex-row flex-col  py-5 md:px-16 lg:px-0 sm:px-5">
       <div className="flex-1 pt-10">
-        <div className="">
+        <div className="container">
           <div>
-            <div className="lg:px-16 px-4  flex">
+            <div className="lg:px-16 px-4  flex w-3/4">
               <h4 className="font-semibold text-2xl mb-5">
                 Subscribe to our newsletter today !
               </h4>
-              <div className="px-5">
-                <img src={Polygon2} alt="" className="w-5 absolute" />
+              <div className="px-5 relative">
+                <img src={Polygon2} alt="" className="w-5 absolute lg:-left-20 bottom-8 opacity-70" />
               </div>
             </div>
           </div>
@@ -25,7 +25,7 @@ const newsletter = () => {
               <img
                 src={Polygon1}
                 alt=""
-                className="w-5 absolute -top-5 left-1"
+                className="w-5 absolute -top-5 left-3"
               />
             </div>
             <div className="lg:px-16 px-5 lg:">
@@ -36,7 +36,7 @@ const newsletter = () => {
             </div>
             <div className="">
               <form action="" className="lg:px-16 px-5 lg:flex gap-2">
-                <div className=" lg:w-5/6 h-14">
+                <div className=" lg:w-5/6 h-15">
                     <Input
                       type="email"
                       label="Email"
@@ -44,7 +44,7 @@ const newsletter = () => {
                     />
                 </div>
                 <div className="flex items-center">
-                    <Button className="bg-[#81D4FA] py-2 px-6 outline-none rounded-lg ">
+                    <Button className="bg-[#81D4FA] py-7 px-6 outline-none rounded-lg ">
                       Subscribe
                     </Button>
                 </div>
