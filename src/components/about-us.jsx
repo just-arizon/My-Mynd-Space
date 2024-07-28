@@ -10,9 +10,9 @@ const about = () => {
           <img src={AboutImg} alt="" className="lg:" />
         </div>
 
-        <img src={Sphere} alt="" className="w-2/12 absolute -z-20 left-5 lg:top-12" />
+        <img src={Sphere} alt="" className="hidden w-2/12 absolute -z-20 left-5 lg:top-12" />
 
-      <div className="bg-[#F2F6F9] py-5 pl-5 rounded-md flex flex-col lg:flex-row items-center">
+      <div className="bg-[#F2F6F9] py-5 pl-5 rounded-md flex flex-col lg:flex-row items-center shadow-md">
         <div className="flex flex-1  flex-col gap-5">
           <h4 className="font-bold text-2xl mb-5">About Us</h4>
           <div className=" lg:w-11/12">
