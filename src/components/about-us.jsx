@@ -1,10 +1,17 @@
 import React from "react";
 import { Button } from "@nextui-org/button";
+import Sphere from "../assets/Ellipse 30.svg";
 import AboutImg from "../assets/Rectangle 7.svg";
 
 const about = () => {
   return (
     <div className="container mx-auto sm:px-6 lg:px-8 my-16 px-5">
+      <div className="block lg:hidden about_img flex flex-1 mb-8">
+          <img src={AboutImg} alt="" className="lg:" />
+        </div>
+
+        <img src={Sphere} alt="" className="w-2/12 absolute -z-20 left-5 lg:top-12" />
+
       <div className="bg-[#F2F6F9] py-5 pl-5 rounded-md flex flex-col lg:flex-row items-center">
         <div className="flex flex-1  flex-col gap-5">
           <h4 className="font-bold text-2xl mb-5">About Us</h4>
@@ -25,8 +32,8 @@ const about = () => {
           </div>
         </div>
 
-        <div className="about_img flex flex-1">
-          <img src={AboutImg} alt="" className="lg:" />
+        <div className="hidden lg:block about_img flex flex-1 justify-end">
+          <div><img src={AboutImg} alt="" className="lg:w-4/6" /></div>
         </div>
       </div>
     </div>

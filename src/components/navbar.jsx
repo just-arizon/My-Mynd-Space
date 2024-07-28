@@ -35,10 +35,10 @@ export default function NavBar() {
         isBlurred={false}
         className="shadow-md"
       >
-        <div className="container mx-auto sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+        <div className="container mx-auto sm:px-6 lg:px-8 ">
+          <div className="flex items-center justify-between h-16 ">
             {/* Logo */}
-            <NavbarBrand className="flex items-center justify-start">
+            <NavbarBrand className="flex items-center justify-start ">
               <Link href="#home" className="text-xl font-bold text-gray-800">
                 <img src={Logo} alt="Logo" className="w-32 h-32" />
               </Link>
