@@ -7,16 +7,16 @@ import {Input} from "@nextui-org/input";
 
 const newsletter = () => {
   return (
-    <div className="flex lg:flex-row flex-col  py-5 md:px-16 lg:px-0 sm:px-5">
+    <div className="flex lg:flex-row flex-col container mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex-1 pt-10">
         <div className="container">
           <div>
-            <div className="lg:px-16 px-4  flex w-3/4">
+            <div className="flex lg:w-3/4">
               <h4 className="font-semibold text-2xl mb-5">
                 Subscribe to our newsletter today !
               </h4>
               <div className="px-5 relative">
-                <img src={Polygon2} alt="" className="w-5 absolute lg:-left-20 bottom-8 opacity-70" />
+                <img src={Polygon2} alt="" className="w-5 absolute lg:-left-12 bottom-8 opacity-70" />
               </div>
             </div>
           </div>
@@ -28,14 +28,14 @@ const newsletter = () => {
                 className="w-5 absolute -top-5 left-3"
               />
             </div>
-            <div className="lg:px-16 px-5 lg:">
+            <div className=" lg:">
               <p className="pr-5">
                 Don’t miss any information, stay updated always with our timely
                 newsletters. Subscribe below
               </p>
             </div>
             <div className="">
-              <form action="" className="lg:px-16 px-5 lg:flex gap-2">
+              <form action="" className="lg:flex gap-2">
                 <div className=" lg:w-5/6 h-15">
                     <Input
                       type="email"
