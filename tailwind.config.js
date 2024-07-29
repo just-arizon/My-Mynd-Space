@@ -12,6 +12,9 @@ export default {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
       },
+      backgroundImage: {
+        'custom-image': "url('/images/your-image.jpg')",
+      },
     },
   },
   darkMode: "class",

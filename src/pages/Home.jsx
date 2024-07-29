@@ -2,6 +2,7 @@ import React from "react";
 import Newsletter from "../components/newsletter";
 import About from "../components/about-us";
 import Help from "../components/help";
+import Landing from "../components/landing";
 import { motion } from 'framer-motion'
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
     exit={{ opacity: 0, y: -50 }} // Exit to slightly above the view
     transition={{ duration: 0.5, ease: 'easeInOut' }} // Smooth transition
     >
+      <Landing />
       <Help />
       <About />
       <Newsletter />
