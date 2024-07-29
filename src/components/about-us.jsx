@@ -19,7 +19,7 @@ const about = () => {
           </CardHeader>
           <CardBody className="flex lg:justify-start justify-center">
             <div className=" lg:w-11/12">
-              <p className="text-medium text-center">
+              <p className="text-sm text-center leading-6">
                 At MymindSpace, our commitment to your mental wellness drives
                 everything we do. From our humble beginnings, we've grown into a
                 vibrant community dedicated to supporting each individual’s

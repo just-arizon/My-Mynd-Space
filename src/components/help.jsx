@@ -52,7 +52,7 @@ const Help = () => {
                 <p className="text-lg capitalize font-bold text-center mt-5">{item.title}</p>
               </CardHeader>
               <CardBody className="pt-2 mt-4">
-              <small className=" text-center text-black">{item.body}</small>
+              <small className=" text-center text-black leading-6">{item.body}</small>
               </CardBody>
             </Card>
           ))}
