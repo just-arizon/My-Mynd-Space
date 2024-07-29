@@ -41,7 +41,7 @@ const Help = () => {
         <div className="flex flex-wrap justify-center gap-12 py-10">
            
           {cards.map((item, index) => (
-            <Card key={index} className="w-72 pb-20 bg-[#F2F6F9]">
+            <Card key={index} className="w-72 pb-16 bg-[#F2F6F9]">
               <Image
                 alt="Card background"
                 className="object-cover w-full rounded-t-xl rounded-br-none
@@ -50,8 +50,10 @@ const Help = () => {
               />
               <CardHeader className="pb-0 pt-2 px-4 flex-col  gap-6">
                 <p className="text-lg capitalize font-bold text-center mt-5">{item.title}</p>
-                <small className=" text-center text-black">{item.body}</small>
               </CardHeader>
+              <CardBody className="pt-2 mt-4">
+              <small className=" text-center text-black">{item.body}</small>
+              </CardBody>
             </Card>
           ))}
         </div>

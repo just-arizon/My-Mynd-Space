@@ -13,10 +13,10 @@ import {
 import Logo from "../assets/Mymindspace.svg";
 
 const navItems = [
-  { name: "About Us", href: "#home" },
-  { name: "Resources", href: "#features" },
-  { name: "Community Voices", href: "#community" },
-  { name: "Contact Us", href: "#contact" },
+  { name: "About Us", href: "/about" },
+  { name: "Resources", href: "/resources" },
+  { name: "Community Voices", href: "/community" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 export default function NavBar() {
@@ -39,7 +39,7 @@ export default function NavBar() {
           <div className="flex items-center justify-between h-16 ">
             {/* Logo */}
             <NavbarBrand className="flex items-center justify-start ">
-              <Link href="#home" className="text-xl font-bold text-gray-800">
+              <Link href="/" className="text-xl font-bold text-gray-800">
                 <img src={Logo} alt="Logo" className="w-32 h-32" />
               </Link>
             </NavbarBrand>

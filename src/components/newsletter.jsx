@@ -4,6 +4,7 @@ import Polygon2 from "../assets/Polygon 2.svg";
 import NewsletterImg from "../assets/Group 3706.png";
 import {Button} from "@nextui-org/button";
 import {Input} from "@nextui-org/input";
+import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 
 const newsletter = () => {
   return (
@@ -17,7 +18,7 @@ const newsletter = () => {
                     Subscribe to our newsletter today !
                   </h4>
                   <div className="px-5 relative">
-              <img
+              <Image
                 src={Polygon1}
                 alt=""
                 className="w-5 absolute -top-5 left-1 block lg:hidden"
@@ -69,7 +70,7 @@ const newsletter = () => {
       </div>
 
       <div className="newsletter_img flex-1 flex justify-end p-5 hidden lg:block relative">
-        <img src={NewsletterImg} alt="" className="lg:w-11/12 relative lg:left-24 " />
+        <Image src={NewsletterImg} alt="" className="lg:w-11/12 relative lg:left-24 " />
       </div>
     </div>
   );
