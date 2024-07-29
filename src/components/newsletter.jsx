@@ -42,11 +42,11 @@ const newsletter = () => {
                 className="w-5 absolute -top-5 left-3 hidden lg:block"
               />
             </div>
-            <div className=" lg:">
-              <p className="pr-5">
+            <div className=" lg:py-5">
+              <small className="pr-5 leading-6 text-sm py-5">
                 Don’t miss any information, stay updated always with our timely
                 newsletters. Subscribe below
-              </p>
+              </small>
             </div>
 
             <div className="">
