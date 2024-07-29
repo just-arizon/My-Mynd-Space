@@ -18,8 +18,8 @@ const about = () => {
             <h4 className="font-bold text-2xl">About Us</h4>
           </CardHeader>
           <CardBody className="flex lg:justify-start justify-center">
-            <div className=" lg:w-11/12">
-              <small className="pr-5 text-medium lg:justify-start justify-center">
+            <div className=" lg:w-11/12 lg:justify-start justify-center">
+              <small className="text-medium text-center">
                 At MymindSpace, our commitment to your mental wellness drives
                 everything we do. From our humble beginnings, we've grown into a
                 vibrant community dedicated to supporting each individual’s
