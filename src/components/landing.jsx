@@ -38,12 +38,13 @@ const Landing = () => {
           <div>
             <div className="flex flex-col justify-center mb-5">
               <div>
-                <h1 className="text-black lg:text-3xl text-2xl font-bold text-center lg:w-full">
+                <h1 className="text-black lg:text-3xl text-xl font-bold text-center lg:w-full 
+                md:w-full w-screen">
                   Your peace of mind na our
                 </h1>
-                <h1 className="text-black lg:text-3xl text-2xl text-center font-bold">
+                <h1 className="text-black lg:text-3xl text-xl text-center font-bold">
                   <span>priority,</span>
-                  <span className="lg:text-3xl text-2xl pt-20 font-bold text-[#FF6F61]">
+                  <span className="lg:text-3xl text-xl pt-20 font-bold text-[#FF6F61]">
                     {" "}
                     we dey here for you!
                   </span>
@@ -51,8 +52,8 @@ const Landing = () => {
               </div>
             </div>
             <div className="flex justify-center mb-5">
-              <div className="lg:w-3/4">
-                <p className="text-center text-medium">
+              <div className="lg:w-3/4 px-5">
+                <p className="text-center text-medium text-sm">
                   Your mind is powerful, and with the right tools, you can
                   overcome anything
                 </p>
