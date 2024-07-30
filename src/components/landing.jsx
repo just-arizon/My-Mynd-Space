@@ -31,7 +31,7 @@ const Landing = () => {
 
       <div className="relative flex flex-col gap-8">
         <div
-          className="grid-layout bg-cover bg-center w-full h-full absolute"
+          className="grid-layout bg-cover bg-center w-full h-full absolute p-10"
           style={{ backgroundImage: `url(${GridImg})`, opacity: 0.45 }}
         ></div>
         <div className="landing relative flex flex-col justify-center items-center z-10">
