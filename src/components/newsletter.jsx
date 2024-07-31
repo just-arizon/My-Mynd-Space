@@ -8,13 +8,13 @@ import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 
 const newsletter = () => {
   return (
-    <div className="flex lg:flex-row flex-col container mx-auto px-4 sm:px-6 lg:px-8 mb-28 lg:mb-10">
+    <div className="flex lg:flex-row flex-col container mx-auto sm:px-6 lg:px-40 my-16 px-5">
       <div className="flex-1 pt-10">
         <div className="container">
           <div>
             <div className="flex lg:w-3/4">
               <div>
-                  <h4 className="font-bold text-2xl mb-5">
+                  <h4 className="font-bold  lg:text-3xl text-xl mb-5">
                     Subscribe to our newsletter today !
                   </h4>
                   <div className="px-5 relative">
@@ -26,7 +26,7 @@ const newsletter = () => {
             </div>
               </div>
               <div className="px-5 relative">
-                <img src={Polygon2} alt="" className="w-5 absolute lg:-left-12 -left-16 bottom-8 opacity-70" />
+                <img src={Polygon2} alt="" className="w-5 absolute lg:-left-10 -left-16 bottom-16 opacity-70" />
               </div>
             </div>
 
@@ -70,7 +70,7 @@ const newsletter = () => {
       </div>
 
       <div className="newsletter_img flex-1 flex justify-end p-5 hidden lg:block relative">
-        <Image src={NewsletterImg} alt="" className="lg:w-10/12 relative lg:left-28 " />
+        <Image src={NewsletterImg} alt="" className="lg:w-full relative lg:left-12" />
       </div>
     </div>
   );

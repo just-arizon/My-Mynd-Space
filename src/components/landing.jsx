@@ -22,7 +22,7 @@ const Landing = () => {
   ];
 
   return (
-    <div className="container mx-auto sm:px- lg:px- my-12 px- flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10">
+    <div className="container mx-auto sm:px- lg:px- my-12 px-3 flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10">
       <div className="flex lg:justify-between w-full justify-center">
         <div className="hidden lg:block flex flex-col gap-8 w-1/4 py-8">
           <div className="flex justify-end">
@@ -97,19 +97,19 @@ const Landing = () => {
         </div>
 
         <div className="flex flex-col gap-8 w-1/4 hidden lg:block py-8">
-          <div className="flex justify-center">
+          <div className="flex">
             <Image src={Img5} alt={``} className="object-cover  rounded-full" />
           </div>
-          <div className="flex justify-end">
+          <div className="flex justify-center">
             <Image src={Img4} alt={``} className="object-cover  rounded-full" />
           </div>
-          <div className="flex justify-center">
+          <div className="flex">
             <Image src={Img6} alt={``} className="object-cover  rounded-full" />
           </div>
         </div>
       </div>
 
-      <div className="z-10 lg:mt-14 p-5">
+      <div className="z-10 lg:mt-14 p-">
         <Image src={LandImg} />
       </div>
     </div>

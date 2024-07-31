@@ -29,7 +29,7 @@ const Help = () => {
   ];
 
   return (
-    <div className="mt-5">
+    <div className="mt-5 container px-5">
          <div className="text-center font-bold lg:text-3xl text-xl mb-5">
                 <h4>How We Help</h4>
                 <div className="flex justify-center">

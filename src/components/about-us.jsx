@@ -5,15 +5,15 @@ import AboutImg from "../assets/Rectangle 7.svg";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 const about = () => {
   return (
-    <div className="container mx-auto sm:px-6 lg:px-8 my-16 px-5">
+    <div className="container mx-auto sm:px-6 lg:px-40 my-16 px-3">
       <div className="block lg:hidden about_image flex justify-center mb-8">
           <Image src={AboutImg} alt="" className="lg:" />
         </div>
 
-        <Image src={Sphere} alt="" className="hidden w-2/12 absolute -z-20 left-5 lg:top-12" />
+        <Image src={Sphere} alt="" className=" w-2/12 absolute -z-20 left-5 lg:top-12" />
 
       <Card className="bg-[#F2F6F9] py-5 lg:pl-5 rounded-md flex flex-col lg:flex-row items-center">
-        <div className="flex flex-1  flex-col gap-5">
+        <div className="flex lg:flex-1  flex-col gap-5">
           <CardHeader className="flex lg:justify-start justify-center">
             <h4 className="font-bold text-2xl">About Us</h4>
           </CardHeader>
@@ -38,8 +38,8 @@ const about = () => {
           
         </div>
 
-        <div className="hidden lg:block about_img flex relative ">
-          <div><Image src={AboutImg} alt="" className="lg:w-9/12 relative lg:left-36" /></div>
+        <div className="hidden lg:block about_img flex relative flex-1">
+          <div><Image src={AboutImg} alt="" className="lg:w-full relative lg:" /></div>
         </div>
       </Card>
     </div>

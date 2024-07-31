@@ -3,6 +3,7 @@ import Newsletter from "../components/newsletter";
 import About from "../components/about-us";
 import Help from "../components/help";
 import Landing from "../components/landing";
+import Community from "../components/community";
 import { motion } from 'framer-motion'
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
       <Landing />
       <Help />
       <About />
+      <Community />
       <Newsletter />
     </motion.div>
   );
