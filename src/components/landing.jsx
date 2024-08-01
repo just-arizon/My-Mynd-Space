@@ -10,6 +10,9 @@ import Img3 from "../assets/Ellipse 25.png";
 import Img4 from "../assets/Ellipse 26.png";
 import Img5 from "../assets/Ellipse 27.png";
 import Img6 from "../assets/Ellipse 28.png";
+import Circle from "../assets/Ellipse 22.png";
+import Polygon from "../assets/Polygon 13.png";
+import orangepolygon from "../assets/Polygon 12.png";
 
 const Landing = () => {
   const avatars = [
@@ -22,7 +25,10 @@ const Landing = () => {
   ];
 
   return (
-    <div className="container mx-auto sm:px- lg:px- my-12 px-3 flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10">
+    <div className="container mx-auto sm:px- lg:px- my-6 px-3 flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10">
+      <div className="w-full flex justify-start">
+        <Image src={Circle} />
+      </div>
       <div className="flex lg:justify-between w-full justify-center">
         <div className="hidden lg:block flex flex-col gap-8 w-1/4 py-8">
           <div className="flex justify-end">
@@ -44,7 +50,7 @@ const Landing = () => {
             ></div>
             <div className="landing relative flex flex-col justify-center items-center z-10">
               <div>
-                <div className="flex flex-col justify-center mb-10 mt-5">
+                <div className="flex flex-col justify-center mb-5 mt-5">
                   <div>
                     <h1
                       className="text-black lg:text-3xl text-xl font-bold text-center lg:w-full
@@ -61,7 +67,10 @@ const Landing = () => {
                     </h1>
                   </div>
                 </div>
-                <div className="flex justify-center mb-5">
+                <div className="w-full flex justify-end">
+                  <Image src={orangepolygon} />
+                </div>
+                <div className="flex justify-center mb-2">
                   <div className="lg:w-3/4 px-5 mb-5">
                     <p className="text-center text-medium text-sm">
                       Your mind is powerful, and with the right tools, you can
@@ -69,7 +78,11 @@ const Landing = () => {
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-center pb-8">
+
+                <div className="w-full flex justify-start absolute">
+                  <Image src={Polygon} />
+                </div>
+                <div className="flex justify-center pb-5">
                   <Button
                     // as={Link}
                     href="#cta"
@@ -80,6 +93,9 @@ const Landing = () => {
                 </div>
               </div>
             </div>
+          </div>
+          <div className="w-full pl-10 mt-4">
+            <Image src={Circle} />
           </div>
           <div className="lg:hidden block flex justify-center z-10 mt-6 mb-5">
             <div className="flex">
@@ -93,6 +109,9 @@ const Landing = () => {
                 </div>
               ))}
             </div>
+          </div>
+          <div className="w-full flex justify-end">
+            <Image src={Polygon} />
           </div>
         </div>
 
@@ -109,7 +128,7 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="z-10 lg:mt-14 p-">
+      <div className="z-10 lg:mt-14 sm:px-6 lg:px-40 ">
         <Image src={LandImg} />
       </div>
     </div>
