@@ -25,9 +25,9 @@ const Landing = () => {
   ];
 
   return (
-    <div className="container mx-auto sm:px- lg:px- my-6 px-3 flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10">
+    <div className="container mx-auto sm:px- lg:px- my-6 lg:my-12 px-3 flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10">
       <div className="w-full flex justify-start">
-        <Image src={Circle} />
+        <Image src={Circle} className="lg:hidden block"/>
       </div>
       <div className="flex lg:justify-between w-full justify-center">
         <div className="hidden lg:block flex flex-col gap-8 w-1/4 py-8">
@@ -68,7 +68,7 @@ const Landing = () => {
                   </div>
                 </div>
                 <div className="w-full flex justify-end">
-                  <Image src={orangepolygon} />
+                  <Image src={orangepolygon} className="rounded-none lg:hidden block"/>
                 </div>
                 <div className="flex justify-center mb-2">
                   <div className="lg:w-3/4 px-5 mb-5">
@@ -80,7 +80,7 @@ const Landing = () => {
                 </div>
 
                 <div className="w-full flex justify-start absolute">
-                  <Image src={Polygon} />
+                  <Image src={Polygon} className="rounded-none lg:hidden block"/>
                 </div>
                 <div className="flex justify-center pb-5">
                   <Button
@@ -95,7 +95,7 @@ const Landing = () => {
             </div>
           </div>
           <div className="w-full pl-10 mt-4">
-            <Image src={Circle} />
+            <Image src={Circle} className="lg:hidden block"/>
           </div>
           <div className="lg:hidden block flex justify-center z-10 mt-6 mb-5">
             <div className="flex">
@@ -111,7 +111,7 @@ const Landing = () => {
             </div>
           </div>
           <div className="w-full flex justify-end">
-            <Image src={Polygon} />
+            <Image src={Polygon} className="rounded-none lg:hidden block"/>
           </div>
         </div>
 
