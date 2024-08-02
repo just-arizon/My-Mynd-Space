@@ -8,7 +8,7 @@ import Img2 from "../assets/Rectangle 17.png";
 import Img3 from "../assets/Rectangle 18.png";
 const explore = () => {
   return (
-    <div className="flex lg:flex-col flex-col container mx-auto sm:px-6 lg:px-40 lg:py-16 pt-12 px-5 lg:gap-2 lg:mb-16">
+    <div className="flex lg:flex-col flex-col container mx-auto sm:px-6 lg:px-40 lg:py-10 pt-12 px-5 lg:gap-2 lg:mb-16">
       <h1 className="font-bold text-2xl lg:text-3xl text-xl">
         Explore <span className="text-[#FF6F61]">Resources</span>
       </h1>
@@ -63,10 +63,10 @@ const explore = () => {
 
 
         <div className="flex lg:flex-0 justify-between lg:px-8 py-10 lg:py-0">
-                <div className="flex lg:flex-col flex-row  lg:gap-8 gap-2">
+                <div className="flex lg:flex-col flex-row  lg:gap-8 gap-2 w-fit ">
                     <div className="relative"
                                   >
-                                    <Image src={Img2} />
+                                    <Image src={Img2} className=""/>
                         <div className="flex flex-row text-white items-end bottom-2 absolute z-20 px-4">
                     <div className="flex-1">
                         <h4 className="font-semibold text-sm mb- ">Self-Care for Mental Wellbeing</h4>

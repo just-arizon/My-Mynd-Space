@@ -22,7 +22,7 @@ const community = () => {
       <div className="flex-1 pt-10">
         <div className="container">
           <div>
-            <div className="flex lg:w-3/4">
+            <div className="flex lg:w-3/4 w-full">
               <div>
                 <h4 className="font-bold text-2xl mb-5 lg:text-3xl text-xl">
                   Real people,{" "}
