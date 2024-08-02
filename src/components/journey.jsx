@@ -55,15 +55,30 @@ const journey = () => {
           );
           mask: linear-gradient(90deg, transparent, white 5%, white 90%, transparent);
         }
+
+            .swiper-pagination-bullet {
+          background-color: #ddd;
+          width: 12px;
+          height: 12px;
+          opacity: 1;
+          position: relative;
+          top: .em;
+        }
+        .swiper-pagination-bullet-active {
+          background-color: #252525;
+        }
         `}
       </style>
 
       <Swiper
-        slidesPerView={2}
+        slidesPerView={1}
         spaceBetween={40}
         centeredSlides={true}
         pagination={{
           clickable: true,
+          renderBullet: (index, className) => {
+            return `<span class="${className} custom-bullet"></span>`;
+          },
         }}
         effect={"coverflow"}
         coverflowEffect={{
@@ -74,8 +89,15 @@ const journey = () => {
           slideShadows: false,
         }}
         loop={true}
+        breakpoints={{
+            // Define breakpoints for larger screens
+            1024: {
+              slidesPerView: 2,
+              spaceBetween: 30,
+            },
+          }}
         modules={[Pagination, EffectCoverflow]}
-        className="w-full bg- mySwiper  h-96 flex justify-center"
+        className="w-full bg- mySwiper  lg:h-96 h-96 flex justify-center relative"
       >
         {cards.map((item, index) => (
           <SwiperSlide key={index} className="bg- ">
@@ -92,16 +114,24 @@ const journey = () => {
                 damping: 30,
               }}
             >
-              <Card className="w-96 px-5 bg-[#F2F6F9]">
+              <Card className="lg:w-96 w-full h-full px-5 bg-[#F2F6F9] pt-8 pb-">
                 <div className="">
-                  <div className="card__content">
-                    <CardHeader className="font-extrabold">
-                      {item.title}
+                  <div className=" w-full">
+                    <CardHeader className="font-extrabold text-xl flex justify-center">
+                      <h4 className="text-center">{item.title}</h4>
                     </CardHeader>
-                    <CardBody>
+                    <CardBody className="flex flex-col gap-5">
                       <small className="text-center text-black leading-6">
                         {item.body}
                       </small>
+                      <div className="flex flex-col">
+                          <small className="text-center text-black leading-6">
+                            {item.author}
+                          </small>
+                          <small className="text-center text-black leading-6">
+                            {item.profession}
+                          </small>
+                      </div>
                     </CardBody>
                   </div>
                 </div>
