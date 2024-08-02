@@ -6,13 +6,13 @@ import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 const about = () => {
   return (
     <div className="flex lg:flex-row flex-col container mx-auto sm:px-6 lg:px-40 lg:my-24 my-12 px-5 lg:gap-20">
-      <div className="block lg:hidden about_image flex lg:justify-center mb-8 ">
+      <div className="block lg:hidden about_image flex justify-center mb-8 ">
           <Image src={AboutImg} alt="" className="" />
         </div>
 
-        <Image src={Sphere} alt="" className=" w-11/12 absolute -z-20 left-5 lg:top-12" />
+        {/* <Image src={Sphere} alt="" className=" w- absolute -z- left- lg:top- bg-black" /> */}
 
-      <Card className="bg-[#F2F6F9] py-5 lg:pl-5 rounded-md flex flex-col lg:flex-row items-center">
+      <Card className="bg-[#F2F6F9] py-5 lg:pl- rounded-md flex flex-col lg:flex-row items-center">
         <div className="flex lg:flex-1  flex-col gap-5">
           <CardHeader className="flex lg:justify-start justify-center">
             <h4 className="font-bold text-2xl">About Us</h4>
