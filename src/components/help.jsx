@@ -41,10 +41,10 @@ const Help = () => {
         <div className="flex flex-wrap justify-center gap-12 py-10">
            
           {cards.map((item, index) => (
-            <Card key={index} className="w-72 pb-16 bg-[#F2F6F9]">
+            <Card key={index} className="lg:w-72 w-80 pb-16 bg-[#F2F6F9]">
               <Image
                 alt="Card background"
-                className="object-cover w-full rounded-t-xl rounded-br-none
+                className="object-cover w-80 lg:w-72 rounded-t-xl rounded-br-none
                 rounded-bl-none"
                 src={item.img}
               />
