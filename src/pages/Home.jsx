@@ -5,6 +5,7 @@ import Help from "../components/help";
 import Landing from "../components/landing";
 import Community from "../components/community";
 import Explore from "../components/explore";
+import Journey from "../components/journey";
 import { motion } from 'framer-motion'
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
       <Help />
       <About />
       <Community />
+      <Journey />
       <Explore />
       <Newsletter />
     </motion.div>
