@@ -58,18 +58,32 @@ const journey = () => {
 
             .swiper-pagination-bullet {
           background-color: #ddd;
-          width: 12px;
-          height: 12px;
+          width: 8px;
+          height: 8px;
           opacity: 1;
           position: relative;
-          top: .em;
+          top: .8em;
         }
         .swiper-pagination-bullet-active {
           background-color: #252525;
         }
         `}
       </style>
-
+      <motion.div 
+      initial={{opacity:0}}
+      whileInView={{opacity:1}}
+      className="mb-12 flex bg-orange-"
+      >
+         <div className="w-full">
+             <div className="flex justify-center bg-">
+                 <h4 className="text-center font-bold lg:text-3xl text-xl mb-3">Inspiring Journeys</h4>
+             </div>
+             <div className="w-full  flex justify-center">
+                 <p className="text-center ">Tell your story and inspire others. Be a beacon of hope to someone.</p>
+             </div>
+         </div>
+            </motion.div>
+            
       <Swiper
         slidesPerView={1}
         spaceBetween={40}
@@ -93,28 +107,22 @@ const journey = () => {
             // Define breakpoints for larger screens
             1024: {
               slidesPerView: 2,
-              spaceBetween: 30,
+              spaceBetween: 150,
             },
           }}
         modules={[Pagination, EffectCoverflow]}
-        className="w-full bg- mySwiper  lg:h-96 h-96 flex justify-center relative"
+        className="w-full bg- mySwiper  lg:h-96 h-96 flex flex-col justify-center relative"
       >
+
         {cards.map((item, index) => (
           <SwiperSlide key={index} className="bg- ">
             <motion.div
               className=""
-              animate={
-                {
-                  // scale: activeIndex === index ? 1.1 : 0.9,
-                }
-              }
-              transition={{
-                type: "spring",
-                stiffness: 300,
-                damping: 30,
-              }}
+              initial={{opacity:0}}
+              whileInView={{opacity:1}}
+              
             >
-              <Card className="lg:w-96 w-full h-full px-5 bg-[#F2F6F9] pt-8 pb-">
+              <Card className="lg:w-96 w-full h-full px-5 bg-[#F2F6F9] pt-4 shadow-xl">
                 <div className="">
                   <div className=" w-full">
                     <CardHeader className="font-extrabold text-xl flex justify-center">

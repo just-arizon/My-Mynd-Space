@@ -13,6 +13,8 @@ import Img6 from "../assets/Ellipse 28.png";
 import Circle from "../assets/Ellipse 22.png";
 import Polygon from "../assets/Polygon 13.png";
 import orangepolygon from "../assets/Polygon 12.png";
+import { motion } from "framer-motion";
+
 
 const Landing = () => {
   const avatars = [
@@ -25,7 +27,7 @@ const Landing = () => {
   ];
 
   return (
-    <div className="container mx-auto sm:px- lg:px- my-6 lg:my-12 px-3 flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10">
+    <motion.div className="container mx-auto sm:px- lg:px- my-6 lg:my-12 px-3 flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10">
       <div className="w-full flex justify-start">
         <Image src={Circle} className="lg:hidden block"/>
       </div>
@@ -128,10 +130,13 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className="z-10 lg:mt-14 sm:px-6 lg:px-40 ">
+      <motion.div 
+      initial={{opacity:0}}
+      whileInView={{opacity:1}}
+      className="z-10 lg:mt-14 sm:px-6 lg:px-40 ">
         <Image src={LandImg} />
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 };
 

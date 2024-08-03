@@ -4,7 +4,7 @@ import Image1 from "../assets/Rectangle 1275.png";
 import Image2 from "../assets/Rectangle 1276.png";
 import Image3 from "../assets/Rectangle 1277.png";
 import Svg from "../assets/Vector 6.png";
-
+import { motion } from "framer-motion"
 
 
 
@@ -30,14 +30,14 @@ const Help = () => {
 
   return (
     <div className="container mx-auto sm:px-6 lg:px-40 my-16 px-3">
-         <div className="text-center font-bold lg:text-3xl text-xl mb-5">
+         <motion.h1 className="text-center font-bold lg:text-3xl text-xl mb-5">
                 <h4>How We Help</h4>
                 <div className="flex justify-center">
                     <Image
                      alt="Card Svg"
                      src={Svg}/>
                 </div>
-            </div>
+            </motion.h1>
         <div className="flex flex-wrap justify-center gap-12 py-10">
            
           {cards.map((item, index) => (
