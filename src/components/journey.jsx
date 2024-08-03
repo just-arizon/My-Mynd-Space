@@ -47,7 +47,7 @@ const journey = () => {
     },
   ];
   return (
-    <div className="container mx-auto sm:px-6 lg:px-40 my-16 lg:top-14 px- relative top-36">
+    <div className="container mx-auto sm:px-6 lg:px-40 my-16 lg:top-14 mx- relative top-36">
       <style>
         {`
         .custom-mask {
@@ -145,7 +145,7 @@ const journey = () => {
             },
           }}
         modules={[Pagination, EffectCoverflow]}
-        className="w-full bg- mySwiper  lg:h-96 h-96 flex flex-col justify-center relative"
+        className="w-full bg- mySwiper  lg:h-96 h-96 flex flex-col justify-center relative px-3"
       >
 
         {cards.map((item, index) => (
