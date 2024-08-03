@@ -7,7 +7,12 @@ import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 import { motion } from "framer-motion";
 // import required modules
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
-
+import Img1 from "../assets/Ellipse 24.png";
+import Img2 from "../assets/Ellipse 23.png";
+import Img3 from "../assets/Ellipse 25.png";
+import Img4 from "../assets/Ellipse 26.png";
+import Img5 from "../assets/Ellipse 27.png";
+import Img6 from "../assets/Ellipse 28.png";
 const journey = () => {
   const cards = [
     {
@@ -42,7 +47,7 @@ const journey = () => {
     },
   ];
   return (
-    <div className="container mx-auto sm:px-6 lg:px-40 my-16 px-3">
+    <div className="container mx-auto sm:px-6 lg:px-40 my-16 lg:top-14 px- relative top-36">
       <style>
         {`
         .custom-mask {
@@ -66,9 +71,38 @@ const journey = () => {
         }
         .swiper-pagination-bullet-active {
           background-color: #252525;
+          // width: 15px;
+          // height: 5px;
+          // border-radius: 5px
+
         }
         `}
       </style>
+      <div className="flex bg- justify-between lg:hidden block absolute -top-64 w-full -z-10">
+      <div className=" flex flex-col gap-8 w-3/4 bg-pink- py-8">
+          <div className="flex justify-start">
+            <Image src={Img1} alt={``} className="object-cover  rounded-full" />
+          </div>
+          <div className="flex justify-center">
+            <Image src={Img2} alt={``} className="object-cover  rounded-full" />
+          </div>
+          <div className="flex justify-start">
+            <Image src={Img3} alt={``} className="object-cover  rounded-full" />
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-8 w-3/4 py-8 bg-yellow-">
+          <div className="flex justify-end">
+            <Image src={Img5} alt={``} className="object-cover  rounded-full" />
+          </div>
+          <div className="flex justify-center">
+            <Image src={Img4} alt={``} className="object-cover  rounded-full" />
+          </div>
+          <div className="flex justify-end">
+            <Image src={Img6} alt={``} className="object-cover  rounded-full" />
+          </div>
+        </div>
+      </div>
       <motion.div 
       initial={{opacity:0}}
       whileInView={{opacity:1}}
@@ -76,10 +110,10 @@ const journey = () => {
       >
          <div className="w-full">
              <div className="flex justify-center bg-">
-                 <h4 className="text-center font-bold lg:text-3xl text-xl mb-3">Inspiring Journeys</h4>
+                 <h4 className="text-center font-extrabold lg:text-3xl text-2xl mb-3">Inspiring Journeys</h4>
              </div>
              <div className="w-full  flex justify-center">
-                 <p className="text-center ">Tell your story and inspire others. Be a beacon of hope to someone.</p>
+                 <small className="text-center ">Tell your story and inspire others. Be a beacon of hope to someone.</small>
              </div>
          </div>
             </motion.div>
@@ -125,8 +159,8 @@ const journey = () => {
               <Card className="lg:w-96 w-full h-full px-5 bg-[#F2F6F9] pt-4 shadow-xl">
                 <div className="">
                   <div className=" w-full">
-                    <CardHeader className="font-extrabold text-xl flex justify-center">
-                      <h4 className="text-center">{item.title}</h4>
+                    <CardHeader className=" text-base flex justify-center">
+                      <h4 className="text-center font-bold">{item.title}</h4>
                     </CardHeader>
                     <CardBody className="flex flex-col gap-5">
                       <small className="text-center text-black leading-6">

@@ -7,7 +7,7 @@ import Img3 from "../assets/Rectangle 45.png";
 import Img4 from "../assets/Rectangle 46.png";
 const community = () => {
   return (
-    <div className="flex lg:flex-row flex-col container mx-auto sm:px-6 lg:px-40 lg:my-24 px-5 lg:gap-20">
+    <div className="flex lg:flex-row flex-col container mx-auto sm:px-6 lg:px-40 lg:my-24 mb-40 px-5 lg:gap-20">
       <div className="community_img flex-1 flex lg:flex-row flex-col  lg:pt-10 lg:block relative hidden">
         <div className="flex gap-5 mb-5">
             <Image src={Img1} alt="" className="lg:w-full relative rounded-b-none rounded-r-none" />
@@ -43,8 +43,8 @@ const community = () => {
               </div>
             </div>
           </div>
-          <div className="flex flex-col gap-2">
-            <div className=" lg:py-5 border-r-[#FF6F61]  border-r-2 pr-2">
+          <div className="flex flex-col gap-1">
+            <div className=" lg:py-1 border-r-[#FF6F61]  border-r-2 pr-2">
               <small className="pr-5 leading-6 text-sm py-5 ">
                 Read inspiring stories from community members who have benefited
                 from our platform. Discover how they overcame challenges,
