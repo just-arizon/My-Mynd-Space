@@ -78,6 +78,33 @@ const journey = () => {
         }
         `}
       </style>
+      <div className="hidden absolute bg-  lg:flex w-10/12  bg- -z-10 -top-32 right-28 mt-10">
+      <div className=" flex flex-col gap-8 flex-1 bg-pink- py-8 w-1/2">
+          <div className="flex justify-start">
+            <Image src={Img3} alt={``} className="object-cover  rounded-full" />
+          </div>
+          <div className="flex justify-center">
+            <Image src={Img6} alt={``} className="object-cover  rounded-full" />
+          </div>
+          <div className="flex justify-start">
+            <Image src={Img2} alt={``} className="object-cover  rounded-full" />
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-8 flex-1 py-8 bg-yellow- w-1/2">
+          <div className="flex justify-end">
+            <Image src={Img5} alt={``} className="object-cover  rounded-full" />
+          </div>
+          <div className="flex justify-center">
+            <Image src={Img4} alt={``} className="object-cover  rounded-full" />
+          </div>
+          <div className="flex justify-end">
+            <Image src={Img1} alt={``} className="object-cover  rounded-full" />
+          </div>
+        </div>
+      </div>
+
+
       <div className="flex bg- justify-between lg:hidden block absolute -top-64 w-full -z-10">
       <div className=" flex flex-col gap-8 w-3/4 bg-pink- py-8">
           <div className="flex justify-start">
