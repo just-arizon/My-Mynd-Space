@@ -6,6 +6,7 @@ import Landing from "../components/landing";
 import Community from "../components/community";
 import Explore from "../components/explore";
 import Journey from "../components/journey";
+import Waitlist from "../components/waitlist";
 import { motion } from 'framer-motion'
 
 const Home = () => {
@@ -22,6 +23,7 @@ const Home = () => {
       <Community />
       <Journey />
       <Explore />
+      <Waitlist />
       <Newsletter />
     </motion.div>
   );
