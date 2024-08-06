@@ -6,6 +6,7 @@ import Resources from "./pages/Resources"
 import Community from "./pages/Community"
 import About from "./pages/About"
 import Contact from "./pages/Contact"
+import GetStarted from "./pages/GetStarted"
 import Navbar from "./components/navbar";
 import Footer from "./components/footer";
 export default function App() {
@@ -18,6 +19,7 @@ const router = createBrowserRouter(
        <Route path="/community" element={<Community />} />
        <Route path="/about" element={<About />} />
        <Route path="/contact" element={<Contact />} />
+       <Route path="/get-started" element={<GetStarted />} />
     </Route>
   )
 )

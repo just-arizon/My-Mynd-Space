@@ -63,7 +63,7 @@ export default function NavBar() {
               <NavbarItem className="hidden md:inline-block">
                 <Button
                   as={Link}
-                  href="#cta"
+                  href="/get-started"
                   className="bg-[#81D4FA] py-2 px-6 outline-none rounded-lg text-sm"
                 >
                   Get Started
@@ -115,12 +115,15 @@ export default function NavBar() {
               </Link>
             ))}
             <div className="px-3 py-2 rounded-md text-base font-medium w-full">
-                <Button
-                  href="#cta"
-                  className="bg-[#81D4FA] text-black block "
-                >
-                  Get Started
-                </Button>
+                <div className=" ">
+                  <Button
+                   as={Link}
+                    href="/get-started"
+                    className="bg-[#81D4FA] text-black "
+                  >
+                    Get Started
+                  </Button>
+                </div>
             </div>
           </div>
         </div>

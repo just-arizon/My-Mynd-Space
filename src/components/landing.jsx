@@ -1,6 +1,9 @@
 import React from "react";
 import { Avatar } from "@nextui-org/react";
-import { Button } from "@nextui-org/button";
+import {
+  Link,
+  Button,
+} from "@nextui-org/react";
 import { Image } from "@nextui-org/react";
 import LandImg from "../assets/Herovid-ezgif.com-optimize 3.png";
 import GridImg from "../assets/Grid-block.svg";
@@ -27,7 +30,12 @@ const Landing = () => {
   ];
 
   return (
-    <motion.div className="container mx-auto sm:px- lg:px- my-6 lg:my-12 px-3 flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10">
+    <motion.div 
+    initial={{ opacity: 0, y: 50 }} // Start slightly below the view
+    animate={{ opacity: 1, y: 0 }} // Animate to its original position
+    exit={{ opacity: 0, y: -50 }} // Exit to slightly above the view
+    transition={{ duration: 0.5, ease: 'easeInOut' }} // Smooth transition
+    className="container mx-auto sm:px- lg:px- my-6 lg:my-12 px-3 flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10">
       <div className="w-full flex justify-start">
         <Image src={Circle} className="lg:hidden block"/>
       </div>
@@ -86,8 +94,8 @@ const Landing = () => {
                 </div>
                 <div className="flex justify-center pb-5">
                   <Button
-                    // as={Link}
-                    href="#cta"
+                    as={Link}
+                    href="/get-started"
                     className="bg-[#81D4FA] py-2 px-10 outline-none rounded-lg text-sm"
                   >
                     Get Started
