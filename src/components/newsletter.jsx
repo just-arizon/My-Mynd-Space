@@ -50,15 +50,15 @@ const newsletter = () => {
               </div>
               <div className="">
                 <form action="" className="lg:flex gap-2">
-                  <div className=" lg:w-5/6 h-15">
+                  <div className=" lg:w-5/6 h-14">
                       <Input
                         type="email"
                         label="your email address"
-                        className=" py-2 h-full  w-full rounded  text-sm"
+                        className=" py-2 h-full  w-full rounded "
                       />
                   </div>
                   <div className="flex items-center">
-                      <Button className="bg-[#81D4FA] py-7 px-6 outline-none rounded-lg ">
+                      <Button className="bg-[#81D4FA] py-2 px-10 outline-none rounded-lg ">
                         Subscribe
                       </Button>
                   </div>
