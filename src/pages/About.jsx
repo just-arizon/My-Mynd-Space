@@ -33,9 +33,9 @@ const About = () => {
       <section className="flex justify-center my-3 lg:my-0">
         <Card className="bg-[#F2F6F9] py-5 lg:p-12 lg:pl- rounded-md flex flex-col lg:flex-row items-center lg:w-9/12">
           <div className="flex flex-col gap-5">
-            <CardBody className="flex lg:justify-start justify-center ">
-              <div className="flex flex-col gap-12 ">
-                <small className="text-sm text-center lg:text-start leading-6">
+            <CardBody className="flex lg:justify-start justify-start ">
+              <div className="flex flex-col gap-12">
+                <small className="text-sm text-start lg:text-start leading-6">
                   At MymindSpace, our commitment to your mental wellness drives
                   everything we do. From our humble beginnings, we've grown into
                   a vibrant community dedicated to supporting each individual’s
@@ -43,7 +43,7 @@ const About = () => {
                   compassion, innovation, and an unwavering belief in the power
                   of information and support to transform lives.
                 </small>
-                <small className="text-sm text-center lg:text-start leading-6">
+                <small className="text-sm text-start lg:text-start leading-6">
                   We're committed to helping individuals heal, grow, and
                   flourish. Discover our story, our resources, and our passion
                   for creating a brighter, more hopeful future for everyone.
