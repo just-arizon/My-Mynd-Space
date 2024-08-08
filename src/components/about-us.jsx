@@ -2,6 +2,7 @@ import React from "react";
 import { Button } from "@nextui-org/button";
 import Sphere from "../assets/Ellipse 30.svg";
 import AboutImg from "../assets/Rectangle 7.svg";
+
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 const about = () => {
   return (
