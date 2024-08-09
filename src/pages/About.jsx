@@ -36,6 +36,38 @@ const About = () => {
      body: "We prioritize confidentiality to ensure that everyone feels safe and secure sharing their experiences. Our commitment to privacy helps build trust and encourages open, honest communication within our community"
     }
   ]
+
+
+  const team = [
+    {id: 1,
+     img: value1,
+     name: "Rachel Babalola   ",
+     social1: "",
+     social2: "",
+     school: "University Student",
+    },
+    {id: 2,
+     img: value2,
+     name: "Rachel Babalola",
+    social1: "",
+    social2: "",
+    school: "University Student",
+    },
+    {id: 3,
+     img: value3,
+     name: "Rachel Babalola",
+     social1: "",
+     social2: "",
+     school: "University Student",
+    },
+    {id: 4,
+     img: value4,
+     name: "Rachel Babalola",
+     social1: "",
+     social2: "",
+     school: "University Student",
+    }
+  ]
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }} // Start slightly below the view
@@ -45,7 +77,7 @@ const About = () => {
       className="flex  flex-col container mx-auto sm:px-6 lg:px-40 lg:my-12 mb-40 px-5 lg:gap-12 gap-8"
     >
       <section>
-        <motion.h1 className="text-center font-bold lg:text-3xl text-xl my-5 px-5">
+        <motion.h1 className="text-center font-bold lg:text-3xl text-2xl my-5 px-5">
           <h4>Our Story</h4>
           <div className="flex justify-center">
             <Image alt="Card Svg" src={Svg} />
@@ -82,7 +114,7 @@ const About = () => {
 
       <section className=" my-6 lg:my-12">
         <div className="mb-10">
-          <motion.h1 className="text-start font-bold lg:text-3xl text-xl my-5 ">
+          <motion.h1 className="text-start font-bold lg:text-3xl text-2xl my-5 ">
             <h4>Our Vision & Mission</h4>
             <div className="flex justify-start">
               <Image alt="Card Svg" src={Svg2} className="w-3/4" />
@@ -146,7 +178,7 @@ const About = () => {
         </div>
 
         <section className="lg:my-16 my-20 px-">
-        <motion.h1 className="text-start font-bold lg:text-3xl text-xl mb-5">
+        <motion.h1 className="text-start font-bold lg:text-3xl text-2xl mb-5">
           <h4>Our Core Value</h4>
         
         </motion.h1>
@@ -181,15 +213,17 @@ const About = () => {
         </div>
       </section>
 
-      <section className="lg:my-16 my-20 px-">
-        <motion.h1 className="text-center font-bold lg:text-3xl text-xl mb-5 text-[#81D4FA]">
+      <section className="lg:my-32 my-20 px-">
+        <motion.h1 className="text-center font-bold lg:text-3xl text-2xl mb-5 text-[#81D4FA]">
           <h4>Meet The Team</h4>
         
         </motion.h1>
-        <div className="lg: bg- flex justify-center">
-          <small className="text-center">
-          Our dedicated team at MyMindSpace combines expertise and passion to create a safe and empowering environment for mental health support.
-            </small>
+        <div className="lg:w-full bg-blac flex justify-center">
+          <div className="lg:w-2/3 flex justify-center">
+            <small className="text-center leading-6">
+            Our dedicated team at MyMindSpace combines expertise and passion to create a safe and empowering environment for mental health support.
+              </small>
+          </div>
         </div>
         </section>
       </section>
