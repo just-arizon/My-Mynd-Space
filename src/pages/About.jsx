@@ -13,6 +13,10 @@ import value2 from "../assets/Group 3711.png";
 import value3 from "../assets/Group 3712.png";
 import value4 from "../assets/Group 3713.png";
 import AboutImg from "../assets/Rectangle 55.png";
+import memberImg1 from "../assets/Abdulsamad.jpg";
+import memberImg2 from "../assets/Damilola.jpg";
+import memberImg3 from "../assets/Joel Maxwell.jpg";
+import memberImg4 from "../assets/Arinze.jpg";
 
 const About = () => {
   const coreValues = [
@@ -45,33 +49,33 @@ const About = () => {
   const teamMembers = [
     {
       id: 1,
-      img: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
-      name: "Rachel Babalola",
-      role: "University Student",
+      img: memberImg1,
+      name: "Abdulsamad",
+      role: "Project Manager",
       twitter: "https://twitter.com/rachelbabalola",
       linkedin: "https://linkedin.com/in/rachelbabalola",
     },
     {
       id: 2,
-      img: "https://i.pravatar.cc/150?u=a04258a2462d826712d",
-      name: "John Doe",
-      role: "University Student",
+      img: memberImg2,
+      name: "Damilola",
+      role: "Product Manager",
       twitter: "https://twitter.com/johndoe",
       linkedin: "https://linkedin.com/in/johndoe",
     },
     {
       id: 3,
-      img: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
-      name: "Jane Smith",
-      role: "University Student",
+      img: memberImg3,
+      name: "Joel Maxwell",
+      role: "UI/UX Design Lead",
       twitter: "https://twitter.com/janesmith",
       linkedin: "https://linkedin.com/in/janesmith",
     },
     {
       id: 4,
-      img: "https://i.pravatar.cc/150?u=a04258114e29026302d",
-      name: "Alice Johnson",
-      role: "University Student",
+      img: memberImg4,
+      name: "Arinze Chinweuba",
+      role: "Front-End Developer",
       twitter: "https://twitter.com/alicejohnson",
       linkedin: "https://linkedin.com/in/alicejohnson",
     },
@@ -164,21 +168,21 @@ const About = () => {
         </div>
       </section>
 
-      <section className="lg:my-16 my-20">
+      <section className="lg:my-16 my-10">
         <motion.h1 {...motionSettings} className="font-bold lg:text-3xl text-2xl mb-5">
           <h4>Our Core Values</h4>
         </motion.h1>
         <div className="lg:w-2/4">
-          <p className="flex justify-start">
+          <small className="flex justify-start">
             Guiding principles that shape our commitment to mental well-being.
-          </p>
+          </small>
         </div>
         <div className="grid lg:grid-cols-2 gap-10 my-10">
           {coreValues.map((value) => (
             <Card key={value.id} className="bg-[#F2F6F9] p-5 rounded-3xl">
               <CardHeader className="flex flex-col justify-start">
                 <div className="w-full">
-                  <Image src={value.icon} alt={value.title} className="w-10" />
+                  <Image src={value.icon} alt={value.title} className="w-10 rounded-none" />
                   <h6 className="font-semibold text-xl mt-2 text-start">{value.title}</h6>
                 </div>
               </CardHeader>
@@ -197,32 +201,28 @@ const About = () => {
         </motion.h1>
         <div className="lg:w-full flex justify-center">
           <div className="lg:w-2/3 text-center">
-            <p className="leading-6">
+            <small className="leading-6">
               Our dedicated team at MyMindSpace combines expertise and passion to create a safe and empowering environment for mental health support.
-            </p>
+            </small>
           </div>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-10 my-10">
           {teamMembers.map((team) => (
             <div key={team.id} className="text-center">
-              <Avatar src={team.img} className="w-32 h-32 mx-auto" />
+              <Avatar src={team.img} className="w-32 h-32 mx-auto " />
               <div className="flex justify-center gap-4 mt-4">
                 <Button
-                  auto
-                  flat
-                  as="a"
+                 isIconOnly
                   href={team.twitter}
                   target="_blank"
-                  className="text-blue-"
+                  className=" w-10 h-10"
                  
                 >
 <FaTwitter />
                 </Button>
                 <Button
-                  auto
-                  flat
-                  as="a"
+                 isIconOnly
                   href={team.linkedin}
                   target="_blank"
                   className="text-blue-"
@@ -232,7 +232,7 @@ const About = () => {
                 </Button>
               </div>
               <h6 className="font-bold mt-4">{team.name}</h6>
-              <p>{team.role}</p>
+              <small>{team.role}</small>
              
             </div>
           ))}
