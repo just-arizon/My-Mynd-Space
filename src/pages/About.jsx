@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import {Avatar} from "@nextui-org/react";
 import Svg from "../assets/Vector 6.png";
 import Svg2 from "../assets/Vector 5.png";
 import vision1 from "../assets/Rectangle 1286.png";
@@ -38,33 +39,47 @@ const About = () => {
   ]
 
 
-  const team = [
+  const teams = [
     {id: 1,
-     img: value1,
+     img: "https://i.pravatar.cc/150?u=a042581f4e29026024d",
      name: "Rachel Babalola   ",
-     social1: "",
-     social2: "",
+     twitter: "",
+     linkedin: "",
      school: "University Student",
     },
     {id: 2,
-     img: value2,
+     img: "https://i.pravatar.cc/150?u=a04258a2462d826712d",
      name: "Rachel Babalola",
-    social1: "",
-    social2: "",
+    twitter: "",
+    linkedin: "",
     school: "University Student",
     },
     {id: 3,
-     img: value3,
+     img: "https://i.pravatar.cc/150?u=a042581f4e29026704d",
      name: "Rachel Babalola",
-     social1: "",
-     social2: "",
+     twitter: "",
+     linkedin: "",
      school: "University Student",
     },
     {id: 4,
-     img: value4,
+     img: "https://i.pravatar.cc/150?u=a04258114e29026302d",
      name: "Rachel Babalola",
-     social1: "",
-     social2: "",
+     twitter: "",
+     linkedin: "",
+     school: "University Student",
+    },
+    {id: 5,
+     img: "https://i.pravatar.cc/150?u=a04258114e29026302d",
+     name: "Rachel Babalola",
+     twitter: "",
+     linkedin: "",
+     school: "University Student",
+    },
+    {id: 6,
+     img: "https://i.pravatar.cc/150?u=a04258114e29026302d",
+     name: "Rachel Babalola",
+     twitter: "",
+     linkedin: "",
      school: "University Student",
     }
   ]
@@ -224,6 +239,20 @@ const About = () => {
             Our dedicated team at MyMindSpace combines expertise and passion to create a safe and empowering environment for mental health support.
               </small>
           </div>
+        </div>
+
+        <div className="grid lg:grid-cols-3 gap-4 my-10 ">
+          {teams.map((team) => (
+            <div key={team.id} className="w-50 h-50  p-7">
+              <Avatar src={team.img}  className="w-50 h-50 "  />
+              <div className=""></div>
+              <div className="flex flex-col justify-center my-8">
+                <h6 className="text-center">{team.name}</h6>
+                <small className="text-center">{team.school}</small>
+              </div>
+            </div>
+            
+          ))}
         </div>
         </section>
       </section>
