@@ -6,10 +6,36 @@ import vision1 from "../assets/Rectangle 1286.png";
 import vision2 from "../assets/Rectangle 1283.png";
 import visionImg from "../assets/Group 3708.png";
 import missionImg from "../assets/Group 3709.png";
+import value1 from "../assets/Group 3710.png";
+import value2 from "../assets/Group 3711.png";
+import value3 from "../assets/Group 3712.png";
+import value4 from "../assets/Group 3713.png";
 import AboutImg from "../assets/Rectangle 55.png";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 
 const About = () => {
+  const cards = [
+    {id: 1,
+     icon: value1,
+     heading: "Empowerment",
+     body: "At MyMindSpace, we believe in empowering individuals to take control of their mental health journey. By providing resources, support, and education, we aim to inspire confidence and foster self-reliance."
+    },
+    {id: 2,
+     icon: value2,
+     heading: "Hope",
+     body: "At MyMindSpace, we believe in empowering individuals to take control of their mental health journey. By providing resources, support, and education, we aim to inspire confidence and foster self-reliance."
+    },
+    {id: 3,
+     icon: value3,
+     heading: "Compassion",
+     body: "Compassion is at the heart of everything we do. We strive to create a welcoming and understanding environment where individuals feel seen, heard, and valued, promoting a culture of kindness and empathy."
+    },
+    {id: 4,
+     icon: value4,
+     heading: "Confidentiality",
+     body: "We prioritize confidentiality to ensure that everyone feels safe and secure sharing their experiences. Our commitment to privacy helps build trust and encourages open, honest communication within our community"
+    }
+  ]
   return (
     <motion.div
       initial={{ opacity: 0, y: 50 }} // Start slightly below the view
@@ -31,10 +57,10 @@ const About = () => {
       </div>
 
       <section className="flex justify-center my-3 lg:my-0">
-        <Card className="bg-[#F2F6F9] py-5 lg:p-12 lg:pl- rounded-md flex flex-col lg:flex-row items-center lg:w-9/12">
+        <Card className="bg-[#F2F6F9] py-5 lg:p-12 lg:pl- rounded-md flex flex-col lg:flex-row items-center lg:w-9/12 rounded-2xl">
           <div className="flex flex-col gap-5">
             <CardBody className="flex lg:justify-start justify-start ">
-              <div className="flex flex-col gap-12">
+              <div className="flex flex-col gap-12 p-3">
                 <small className="text-sm text-start lg:text-start leading-6">
                   At MymindSpace, our commitment to your mental wellness drives
                   everything we do. From our humble beginnings, we've grown into
@@ -55,7 +81,7 @@ const About = () => {
       </section>
 
       <section className=" my-6 lg:my-12">
-        <div>
+        <div className="mb-10">
           <motion.h1 className="text-start font-bold lg:text-3xl text-xl my-5 ">
             <h4>Our Vision & Mission</h4>
             <div className="flex justify-start">
@@ -118,6 +144,54 @@ const About = () => {
           
           </div>
         </div>
+
+        <section className="lg:my-16 my-20 px-">
+        <motion.h1 className="text-start font-bold lg:text-3xl text-xl mb-5">
+          <h4>Our Core Value</h4>
+        
+        </motion.h1>
+        <div className="lg:w-1/3 bg-">
+          <small className="flex justify-start">
+            Guiding principles that shape our commitment to mental well-being.
+            </small>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-10 my-10">
+          {cards.map((card) => (
+             <Card 
+             key={ card.id }
+             className="bg-[#F2F6F9] p-5 lg:pl- rounded-3xl flex flex-col lg:flex-row items-center">
+             <div className="flex flex-col gap-0">
+               <div className="pl-3">
+                 <Image src={card.icon} alt="" className="w-10" />
+               </div>
+               <CardHeader className="flex lg:justify-start justify-start">
+                 <h6 className="font-bold text-xl">{card.heading}</h6>
+               </CardHeader>
+               <CardBody className="flex lg:justify-start justify-center ">
+                 <div className="flex flex-col gap-12 ">
+                   <small className="text-sm text-start lg:text-start leading-6">
+                     {card.body}
+                   </small>
+                 </div>
+               </CardBody>
+             </div>
+           </Card>
+          ))}
+        </div>
+      </section>
+
+      <section className="lg:my-16 my-20 px-">
+        <motion.h1 className="text-center font-bold lg:text-3xl text-xl mb-5 text-[#81D4FA]">
+          <h4>Meet The Team</h4>
+        
+        </motion.h1>
+        <div className="lg: bg- flex justify-center">
+          <small className="text-center">
+          Our dedicated team at MyMindSpace combines expertise and passion to create a safe and empowering environment for mental health support.
+            </small>
+        </div>
+        </section>
       </section>
     </motion.div>
   );
