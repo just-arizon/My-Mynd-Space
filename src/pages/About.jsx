@@ -134,7 +134,7 @@ const About = () => {
                     <Image src={visionImg} alt="" className="w-10" />
                   </div>
                   <CardHeader className="flex lg:justify-start justify-start">
-                    <h6 className="font-bold text-xl">Our Mission</h6>
+                    <h6 className="font-semibold text-xl">Our Mission</h6>
                   </CardHeader>
                   <CardBody className="flex lg:justify-start justify-center ">
                     <div className="flex flex-col gap-12 ">
@@ -158,7 +158,7 @@ const About = () => {
                     <Image src={missionImg} alt="" className="w-10 rounded-none" />
                   </div>
                   <CardHeader className="flex lg:justify-start justify-start">
-                    <h6 className="font-bold text-xl">Our Vision</h6>
+                    <h6 className="font-semibold text-xl">Our Vision</h6>
                   </CardHeader>
                   <CardBody className="flex lg:justify-start justify-center ">
                     <div className="flex flex-col gap-12 ">
@@ -198,7 +198,7 @@ const About = () => {
                  <Image src={card.icon} alt="" className="w-10" />
                </div>
                <CardHeader className="flex lg:justify-start justify-start">
-                 <h6 className="font-bold text-xl">{card.heading}</h6>
+                 <h6 className="font-semibold text-xl">{card.heading}</h6>
                </CardHeader>
                <CardBody className="flex lg:justify-start justify-center ">
                  <div className="flex flex-col gap-12 ">
