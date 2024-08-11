@@ -11,7 +11,9 @@ import {
 } from "@nextui-org/react";
 import { FaTwitter, FaLinkedin, FaBehance } from "react-icons/fa";
 import Svg from "../assets/Vector 6.png";
+import partnersvg from "../assets/Partner svg.png";
 import Svg2 from "../assets/Vector 5.png";
+import partnerImg from "../assets/Rectangle 1281.png";
 import vision1 from "../assets/Rectangle 1286.png";
 import vision2 from "../assets/Rectangle 1283.png";
 import visionImg from "../assets/Group 3708.png";
@@ -26,6 +28,7 @@ import memberImg2 from "../assets/Damilola.jpg";
 import memberImg3 from "../assets/Joel Maxwell.jpg";
 import memberImg4 from "../assets/Arinze.jpg";
 import memberImg5 from "../assets/Kosi.jpg";
+import Frame from "../assets/Frame 3690.png";
 
 const About = () => {
   const coreValues = [
@@ -123,6 +126,28 @@ const About = () => {
     },
   ];
 
+  const partnersData = [
+    {
+      id: 1,
+      count: "27,000+",
+      remark: "Total users helped",
+    },
+    {
+      id: 2,
+      count: "4.8/5",
+      remark: "Total users helped",
+    },
+    {
+      id: 3,
+      count: "53,000+",
+      remark: "Monthly Unique Visitors",
+    },
+    {
+      id: 4,
+      count: "18,000+",
+      remark: "Newsletter Subscribers",
+    },
+  ]
   const motionSettings = {
     initial: { opacity: 0, y: 50 },
     animate: { opacity: 1, y: 0 },
@@ -182,7 +207,11 @@ const About = () => {
             <Card className="bg-[#F2F6F9] p-5 rounded-3xl">
               <CardHeader className="pl-3">
                 <div className="flex flex-col">
-                  <Image src={visionImg} alt="Our Mission" className="w-10 rounded-none" />
+                  <Image
+                    src={visionImg}
+                    alt="Our Mission"
+                    className="w-10 rounded-none"
+                  />
                   <h6 className="font-semibold text-xl mt-2">Our Mission</h6>
                 </div>
               </CardHeader>
@@ -198,7 +227,11 @@ const About = () => {
             <Card className="bg-[#F2F6F9] p-5 rounded-3xl">
               <CardHeader className="pl-3">
                 <div className="flex flex-col">
-                  <Image src={missionImg} alt="Our Vision" className="w-10 rounded-none" />
+                  <Image
+                    src={missionImg}
+                    alt="Our Vision"
+                    className="w-10 rounded-none"
+                  />
                   <h6 className="font-semibold text-xl mt-2">Our Vision</h6>
                 </div>
               </CardHeader>
@@ -221,7 +254,7 @@ const About = () => {
         >
           <h4>Our Core Values</h4>
         </motion.h1>
-        <div className="lg:w-2/4">
+        <div className="lg:w-80">
           <small className="flex justify-start">
             Guiding principles that shape our commitment to mental well-being.
           </small>
@@ -279,7 +312,7 @@ const About = () => {
                     target="_blank"
                     className=" w-10 h-10"
                   >
-                    <FaTwitter size={16}/>
+                    <FaTwitter size={16} />
                   </Button>
                 )}
                 {team.socials.linkedin && (
@@ -290,7 +323,7 @@ const About = () => {
                     target="_blank"
                     className="text-blue-"
                   >
-                    <FaLinkedin size={16}/>
+                    <FaLinkedin size={16} />
                   </Button>
                 )}
 
@@ -302,7 +335,7 @@ const About = () => {
                     target="_blank"
                     className="text-blue-"
                   >
-                    <FaBehance size={16}/>
+                    <FaBehance size={16} />
                   </Button>
                 )}
               </div>
@@ -310,6 +343,56 @@ const About = () => {
               <small>{team.role}</small>
             </div>
           ))}
+        </div>
+      </section>
+      <section className="lg:my-12 my-10">
+       <div className="mb-10">
+          <motion.h1
+            {...motionSettings}
+            className="font-bold lg:text-3xl text-2xl"
+          >
+            <h4>Partner with Us</h4>
+            <div className="flex justify-start">
+              <Image alt="Vision & Mission" src={partnersvg} className="w-3/4" />
+            </div>
+          </motion.h1>
+        </div>
+        <div className="flex gap-8 flex-col lg:flex-row">
+        <div className="flex-1">
+        <Card className="bg-[#F2F6F9] py-4 lg:px-4 rounded-2xl my-8 lg:w-9/ ">
+        <CardHeader className="font-semibold text-2xl mt-2 text-start">
+        Be a part of the solution as we shine the light on Mental Health together!
+        </CardHeader>
+          <CardBody className="flex flex-col">
+            <p className="text-sm leading-6">
+              Join us at MyMindSpace in shining a light on mental health. Together, we can create a supportive community, raise awareness, and make a positive impact on mental well-being. Your involvement can help spread knowledge, reduce stigma, and provide essential resources to those in need. Let’s inspire change and build a healthier, more compassionate world.
+            </p>
+          </CardBody>
+        </Card>
+        <Card className="bg-[#F2F6F9] py-8 lg:px-4">
+          <div className="flex gap-5">
+            <Image src={Frame} className="rounded-none"/>
+            <h6 className="text-xl font-semibold">Click to send us an email for more information</h6>
+          </div>
+        </Card>
+        </div>
+        <div className="my-8 flex-1">
+          <div className="">
+            <Image src={partnerImg}/>
+          </div>
+          <div className="grid grid-cols-2 gap-4 mt-2">
+          {partnersData.map((partner) => (
+                <Card key={partner.id} className="bg-[#F2F6F9] p-3 rounded-lg">
+                  <CardHeader className="text-xl font-bold text-[#FF6F61] bg- py-0 flex justify-center">
+                    <div>{partner.count}</div>
+                  </CardHeader>
+                  <CardBody className="text-sm text-center py-0">
+                    {partner.remark}
+                  </CardBody>
+                </Card>
+              ))}
+          </div>
+        </div>
         </div>
       </section>
     </motion.div>
