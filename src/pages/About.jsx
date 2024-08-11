@@ -158,7 +158,7 @@ const About = () => {
   return (
     <motion.div
       {...motionSettings}
-      className="flex flex-col container mx-auto sm:px-6 lg:px-40 lg:my-12 mb-40 px-5 lg:gap-12 gap-8"
+      className="flex flex-col container mx-auto sm:px-6 lg:px-40 lg:my-12 mb-10 px-5 lg:gap-12 gap-8"
     >
       <section className="text-center my-5">
         <motion.h1
@@ -282,7 +282,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className="lg:my-12 my-10">
+      <section className="lg:my-12  mb-10">
         <motion.h1
           {...motionSettings}
           className="text-center font-bold lg:text-3xl text-2xl mb-5 text-[#81D4FA]"
@@ -345,7 +345,7 @@ const About = () => {
           ))}
         </div>
       </section>
-      <section className="lg:my-12 my-10">
+      <section className="lg:my-12 mt-6 mb-10">
        <div className="mb-10">
           <motion.h1
             {...motionSettings}
@@ -353,14 +353,14 @@ const About = () => {
           >
             <h4>Partner with Us</h4>
             <div className="flex justify-start">
-              <Image alt="Vision & Mission" src={partnersvg} className="w-3/4" />
+              <Image alt="Vision & Mission" src={partnersvg} className="lg:w-3/4 w-48" />
             </div>
           </motion.h1>
         </div>
         <div className="flex gap-8 flex-col lg:flex-row">
         <div className="flex-1">
-        <Card className="bg-[#F2F6F9] py-4 lg:px-4 rounded-2xl my-8 lg:w-9/ ">
-        <CardHeader className="font-semibold text-2xl mt-2 text-start">
+        <Card className="bg-[#F2F6F9] py-4 px-5 lg:px-4 rounded-2xl lg:my-8 lg:w-9/ ">
+        <CardHeader className="font-semibold lg:text-2xl text-xl mt-2 text-start">
         Be a part of the solution as we shine the light on Mental Health together!
         </CardHeader>
           <CardBody className="flex flex-col">
@@ -369,8 +369,8 @@ const About = () => {
             </p>
           </CardBody>
         </Card>
-        <Card className="bg-[#F2F6F9] py-8 lg:px-4">
-          <div className="flex gap-5">
+        <Card className="bg-[#F2F6F9] py-8 lg:px-4 my-10">
+          <div className="flex gap-5 px-5">
             <Image src={Frame} className="rounded-none"/>
             <h6 className="text-xl font-semibold">Click to send us an email for more information</h6>
           </div>
@@ -380,10 +380,10 @@ const About = () => {
           <div className="">
             <Image src={partnerImg}/>
           </div>
-          <div className="grid grid-cols-2 gap-4 mt-2">
+          <div className="grid grid-cols-2 gap-4 lg:mt-2 mt-8">
           {partnersData.map((partner) => (
-                <Card key={partner.id} className="bg-[#F2F6F9] p-3 rounded-lg">
-                  <CardHeader className="text-xl font-bold text-[#FF6F61] bg- py-0 flex justify-center">
+                <Card key={partner.id} className="bg-[#F2F6F9] lg:p-3 rounded-lg py-5">
+                  <CardHeader className="text-xl font-bold text-[#FF6F61] bg- lg:py-0 flex justify-center">
                     <div>{partner.count}</div>
                   </CardHeader>
                   <CardBody className="text-sm text-center py-0">
