@@ -108,22 +108,22 @@ const About = () => {
       id: 5,
       img: memberImg5,
       name: "Kosisochukwu Charity Ani",
-      role: "University Student",
+      role: "Product Manager",
       socials: {
         linkedin:
           "https://www.linkedin.com/in/kosisochukwu-ani-735a941b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
       },
     },
-    {
-      id: 6,
-      img: "https://i.pravatar.cc/150?u=a04258114e29026302d",
-      name: "Emily Davis",
-      role: "University Student",
-      socials: {
-        twitter: "https://twitter.com/emilydavis",
-        linkedin: "https://linkedin.com/in/emilydavis",
-      },
-    },
+    // {
+    //   id: 6,
+    //   img: "https://i.pravatar.cc/150?u=a04258114e29026302d",
+    //   name: "Emily Davis",
+    //   role: "University Student",
+    //   socials: {
+    //     twitter: "https://twitter.com/emilydavis",
+    //     linkedin: "https://linkedin.com/in/emilydavis",
+    //   },
+    // },
   ];
 
   const partnersData = [

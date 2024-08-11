@@ -1,6 +1,6 @@
 import React from "react";
 import { Button } from "@nextui-org/button";
-import { Image } from "@nextui-org/react";
+import { Image, Link } from "@nextui-org/react";
 import Line from "../assets/Line 3.png";
 import ExploreImg from "../assets/Rectangle 16.png";
 import Line2 from "../assets/Line 2.png";
@@ -21,7 +21,10 @@ const explore = () => {
           </div>
           <div>
             <div className="flex items-center lg:justify-start justify-start lg:block hidden ">
-              <Button className=" bg-transparent py-5 px-6 outline-none ">
+              <Button 
+              as={Link}
+              href="/resources"
+              className=" bg-transparent py-5 px-6 outline-none ">
                 <span>View more</span>
                 <Image src={Line} />
               </Button>

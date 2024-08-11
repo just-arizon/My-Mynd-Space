@@ -95,7 +95,7 @@ const GetStarted = () => {
           ))}
         </div>
       </div>
-      <div className="flex justify-between py-10 lg:block hidden">
+      <div className="flex justify-between py-10 lg:flex hidden">
         <div className="flex flex-1 px-5">
           <Image src={Circle} className="w-8 " />
         </div>

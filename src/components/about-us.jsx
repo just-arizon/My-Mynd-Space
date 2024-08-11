@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@nextui-org/button";
+import { Button, Link } from "@nextui-org/react";
 import Sphere from "../assets/Ellipse 30.svg";
 import AboutImg from "../assets/Rectangle 7.svg";
 
@@ -14,7 +14,7 @@ const about = () => {
         {/* <Image src={Sphere} alt="" className=" w- absolute -z- left- lg:top- bg-black" /> */}
 
       <Card className="bg-[#F2F6F9] py-5 lg:pl- rounded-md flex flex-col lg:flex-row items-center">
-        <div className="flex lg:flex-1  flex-col gap-5">
+        <div className="flex lg:flex-1  flex-col gap-5 pl-5">
           <CardHeader className="flex lg:justify-start justify-center">
             <h4 className="font-bold text-2xl">About Us</h4>
           </CardHeader>
@@ -31,7 +31,10 @@ const about = () => {
             </div>
 
             <div className="flex items-center lg:justify-start justify-center mt-8">
-            <Button className="bg-[#81D4FA] py-5 px-6 outline-none rounded-lg ">
+            <Button
+            as={Link}
+            href="/about"
+            className="bg-[#81D4FA] py-5 px-6 outline-none rounded-lg ">
               Read more
             </Button>
           </div>

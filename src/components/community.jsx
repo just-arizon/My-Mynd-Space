@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "@nextui-org/button";
+import { Button, Link } from "@nextui-org/react";
 import { Image } from "@nextui-org/react";
 import Img1 from "../assets/Rectangle 14.png";
 import Img2 from "../assets/Rectangle 44.png";
@@ -56,7 +56,10 @@ const community = () => {
               </small>
             </div>
             <div className="flex items-center lg:justify-start justify-start mt-8">
-            <Button className="bg-[#81D4FA] py-5 px-6 outline-none rounded-lg ">
+            <Button 
+            as={Link}
+            href="/community"
+            className="bg-[#81D4FA] py-5 px-6 outline-none rounded-lg ">
               Community Voices
             </Button>
           </div>
