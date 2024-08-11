@@ -6,6 +6,7 @@ import {
 } from "@nextui-org/react";
 import { Image } from "@nextui-org/react";
 import LandImg from "../assets/Herovid-ezgif.com-optimize 3.png";
+import Videocloudinary from "../pages/Videocloudinary";
 import GridImg from "../assets/Grid-block.svg";
 import Img1 from "../assets/Ellipse 24.png";
 import Img2 from "../assets/Ellipse 23.png";
@@ -142,7 +143,7 @@ const Landing = () => {
       initial={{opacity:0}}
       whileInView={{opacity:1}}
       className="z-10 lg:mt-14 sm:px-6 lg:px-40 ">
-        <Image src={LandImg} />
+        <Videocloudinary />
       </motion.div>
     </motion.div>
   );

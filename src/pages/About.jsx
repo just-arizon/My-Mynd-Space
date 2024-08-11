@@ -181,8 +181,10 @@ const About = () => {
             <Image alt="Vision 1" src={vision1} />
             <Card className="bg-[#F2F6F9] p-5 rounded-3xl">
               <CardHeader className="pl-3">
-                <Image src={visionImg} alt="Our Mission" className="w-10" />
-                <h6 className="font-semibold text-xl mt-2">Our Mission</h6>
+                <div className="flex flex-col">
+                  <Image src={visionImg} alt="Our Mission" className="w-10 rounded-none" />
+                  <h6 className="font-semibold text-xl mt-2">Our Mission</h6>
+                </div>
               </CardHeader>
               <CardBody className="text-sm leading-6">
                 Providing accessible, stigma-free, and personalized mental
@@ -195,8 +197,10 @@ const About = () => {
           <div className="lg:w-1/2 flex flex-col gap-8">
             <Card className="bg-[#F2F6F9] p-5 rounded-3xl">
               <CardHeader className="pl-3">
-                <Image src={missionImg} alt="Our Vision" className="w-10" />
-                <h6 className="font-semibold text-xl mt-2">Our Vision</h6>
+                <div className="flex flex-col">
+                  <Image src={missionImg} alt="Our Vision" className="w-10 rounded-none" />
+                  <h6 className="font-semibold text-xl mt-2">Our Vision</h6>
+                </div>
               </CardHeader>
               <CardBody className="text-sm leading-6">
                 To transform lives through a safe, inclusive, and innovative
@@ -275,7 +279,7 @@ const About = () => {
                     target="_blank"
                     className=" w-10 h-10"
                   >
-                    <FaTwitter size={18}/>
+                    <FaTwitter size={16}/>
                   </Button>
                 )}
                 {team.socials.linkedin && (
@@ -286,7 +290,7 @@ const About = () => {
                     target="_blank"
                     className="text-blue-"
                   >
-                    <FaLinkedin size={18}/>
+                    <FaLinkedin size={16}/>
                   </Button>
                 )}
 
@@ -298,7 +302,7 @@ const About = () => {
                     target="_blank"
                     className="text-blue-"
                   >
-                    <FaBehance size={18}/>
+                    <FaBehance size={16}/>
                   </Button>
                 )}
               </div>
