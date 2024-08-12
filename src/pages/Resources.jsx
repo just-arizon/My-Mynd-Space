@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Button, Link } from "@nextui-org/react";
+import { Button, Link, Image } from "@nextui-org/react";
 import GridImg from "../assets/Grid-block.svg";
+import ResourceImg from "../assets/Group 3714.png";
 
 const Resources = () => {
   return (
@@ -12,7 +13,7 @@ const Resources = () => {
       transition={{ duration: 1, ease: "easeInOut" }} // Smooth transition
       className="container mx-auto sm:px- lg:px- my-6 lg:my-12 px-3 flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10"
     >
-      <div className="my-16 flex justify-center">
+      <div className="mt-16 mb-8 flex justify-center">
         <div className="relative flex flex-row bg-purple-">
           <div
             className="grid-layout bg-cover bg-center lg:w-8/12 w-10/12 h-full absolute left-6 lg:left- lg:mx-40"
@@ -39,15 +40,21 @@ const Resources = () => {
               </div>
             </div>
             <div className="flex justify-center mb-2">
-              <div className="lg:w-3/4 lg:px-28 px-10 mb-5">
+              <div className="lg:w-3/4 lg:px-28 px- mb-5">
                 <p className="text-center text-medium text-sm ">
                 Discover the diverse experiences of our community members. From struggles to triumphs, these real stories highlight our strength and resilience. Share your journey and connect with others who understand.
                 </p>
               </div>
+
             </div>
+
           </div>
         </div>
       </div>
+                  
+      <div className="lg:px-16">
+              <Image alt="About Us" src={ResourceImg} className="mt-5" />
+              </div>
     </motion.div>
   );
 };
