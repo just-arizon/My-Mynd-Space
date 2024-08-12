@@ -5,12 +5,12 @@ import { RiTwitterXFill } from "react-icons/ri";
 import { FaFacebookF } from "react-icons/fa";
 const footer = () => {
     const footerItems = [
-        { name: "About Us", href: "#home" },
-        { name: "Contact Us", href: "#pricing" },
+        { name: "About Us", href: "/about" },
+        { name: "Contact Us", href: "/contact" },
         { name: "Testimonials", href: "#pricing" },
-        { name: "Meet The Team", href: "#features" },
-        { name: "Resources", href: "#pricing" },
-        { name: "Community Support", href: "#pricing" },
+        { name: "Meet The Team", href: "/team-members" },
+        { name: "Resources", href: "/resources" },
+        { name: "Community Support", href: "/community" },
       ];
     const footerIntro = [
         { number: "+234 907 547-12-97", href: "#home" },
