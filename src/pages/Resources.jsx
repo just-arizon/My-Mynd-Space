@@ -15,7 +15,7 @@ const Resources = () => {
       <div className="my-16 flex justify-center">
         <div className="relative flex flex-row bg-purple-">
           <div
-            className="grid-layout bg-cover bg-center lg:w- w-8/12 h-full absolute left-6 lg:left- mx-40"
+            className="grid-layout bg-cover bg-center lg:w-8/12 w-10/12 h-full absolute left-6 lg:left- lg:mx-40"
             style={{ backgroundImage: `url(${GridImg})`, opacity: 0.45 }}
           ></div>
           <div className="landing relative flex flex-col justify-center items-center z-10">
