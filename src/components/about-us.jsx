@@ -13,7 +13,7 @@ const about = () => {
 
         {/* <Image src={Sphere} alt="" className=" w- absolute -z- left- lg:top- bg-black" /> */}
 
-      <Card className="bg-[#F2F6F9] py-5 lg:pl- rounded-md flex flex-col lg:flex-row items-center">
+      <Card className="bg-[#F2F6F9] py-5 px-5 lg:pl- rounded-md flex flex-col lg:flex-row items-center">
         <div className="flex lg:flex-1  flex-col gap-5 lg:pl-5">
           <CardHeader className="flex lg:justify-start justify-center">
             <h4 className="font-bold text-2xl">About Us</h4>

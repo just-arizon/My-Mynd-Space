@@ -90,7 +90,7 @@ import {
   ];
 const Team = () => {
   return (
-    <section className="lg:my-12  mb-10">
+    <section className="lg:my-12  my-12">
         <motion.h1
           {...motionSettings}
           className="text-center font-bold lg:text-3xl text-2xl mb-5 text-[#81D4FA]"
@@ -100,7 +100,7 @@ const Team = () => {
         <motion.div className="lg:w-full flex justify-center"
          {...motionSettings}
         >
-          <div className="lg:w-2/3 text-center">
+          <div className="lg:w-2/3 text-center px-5">
             <small className="leading-6 font-medium">
               Our dedicated team at MyMindSpace combines expertise and passion
               to create a safe and empowering environment for mental health

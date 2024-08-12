@@ -105,7 +105,7 @@ const About = () => {
         </motion.h1>
         <Image alt="About Us" src={AboutImg} className="mt-5" />
         <Card className="bg-[#F2F6F9] py-5 lg:p-12 rounded-2xl my-8 lg:w-9/12 mx-auto">
-          <CardBody className="flex flex-col gap-5">
+          <CardBody className="flex flex-col gap-5 p-5">
             <p className="text-sm leading-6">
               At MyMindSpace, our commitment to your mental wellness drives
               everything we do. From our humble beginnings, we've grown into a
@@ -242,7 +242,7 @@ const About = () => {
             </p>
           </CardBody>
         </Card>
-        <Card className="bg-[#F2F6F9] py-8 lg:px-4 my-10">
+        <Card className="bg-[#F2F6F9] py-8 lg:px-4 my-10 lg:flex hidden">
           <div className="flex gap-5 px-5">
             <Image src={Frame} className="rounded-none"/>
             <h6 className="text-xl font-semibold">Click to send us an email for more information</h6>
@@ -266,6 +266,13 @@ const About = () => {
               ))}
           </div>
         </div>
+
+        <Card className="bg-[#F2F6F9] py-8 lg:px-4 my-10 lg:hidden flex">
+          <div className="flex gap-5 px-5">
+            <Image src={Frame} className="rounded-none"/>
+            <h6 className="text-xl font-semibold">Click to send us an email for more information</h6>
+          </div>
+        </Card>
         </div>
       </section>
     </motion.div>
