@@ -160,7 +160,7 @@ const About = () => {
       {...motionSettings}
       className="flex flex-col container mx-auto sm:px-6 lg:px-40 lg:my-12 mb-10 px-5 lg:gap-12 gap-8"
     >
-      <section className="text-center my-5">
+      <section className="text-center my-16">
         <motion.h1
           {...motionSettings}
           className="font-bold lg:text-3xl text-2xl"

@@ -3,11 +3,15 @@ import { Card,CardHeader,
     CardBody, } from "@nextui-org/react";
 import videoFile from '../assets/Hero vid.mp4'; // Replace with the correct path to your video file
 import ReactPlayer from 'react-player';
+import { motion } from "framer-motion";
 
 const Videocloudinary = () => {
   return (
-    <div>
-       <Card>
+    <motion.div 
+    
+    className="flex justify-center"
+    >
+       <Card className="w-10/12 ">
       <CardBody className='p-0'>
       <ReactPlayer
             url={videoFile} // Use the imported video file
@@ -18,7 +22,7 @@ const Videocloudinary = () => {
           />
       </CardBody>
     </Card>
-    </div>
+    </motion.div>
   );
 };
 
