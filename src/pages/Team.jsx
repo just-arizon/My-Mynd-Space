@@ -1,5 +1,6 @@
 import React from 'react'
 import { FaTwitter, FaLinkedin, FaBehance } from "react-icons/fa";
+import { PiInstagramLogoFill } from "react-icons/pi";
 import {
     Avatar,
     Card,
@@ -14,6 +15,7 @@ import {
   import memberImg3 from "../assets/Joel Maxwell.jpg";
   import memberImg4 from "../assets/Arinze.jpg";
   import memberImg5 from "../assets/Kosi.jpg";
+  import memberImg6 from "../assets/Sola Oginni.jpg";
   import { motion } from "framer-motion";
 
 
@@ -75,18 +77,21 @@ import {
       socials: {
         linkedin:
           "https://www.linkedin.com/in/kosisochukwu-ani-735a941b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+           instagram:
+          "https://www.instagram.com/_kosiso_chukwu_?igsh=ODY5Z3JreDM2ZWw2",
+      },
+       
+      },
+  
+    {
+      id: 6,
+      img: memberImg6,
+      name: "Sola Oginni",
+      role: "University Student",
+      socials: {
+        linkedin: "https://www.linkedin.com/in/sola-oginni-00a20a287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
       },
     },
-    // {
-    //   id: 6,
-    //   img: "https://i.pravatar.cc/150?u=a04258114e29026302d",
-    //   name: "Emily Davis",
-    //   role: "University Student",
-    //   socials: {
-    //     twitter: "https://twitter.com/emilydavis",
-    //     linkedin: "https://linkedin.com/in/emilydavis",
-    //   },
-    // },
   ];
 const Team = () => {
   return (
@@ -148,6 +153,17 @@ const Team = () => {
                     className="text-blue-"
                   >
                     <FaBehance size={16} />
+                  </Button>
+                )}
+                {team.socials.instagram && (
+                  <Button
+                    as={Link}
+                    isIconOnly
+                    href={team.socials.instagram}
+                    target="_blank"
+                    className="text-blue-"
+                  >
+                    <PiInstagramLogoFill size={16} />
                   </Button>
                 )}
               </div>
