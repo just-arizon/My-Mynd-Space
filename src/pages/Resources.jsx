@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import ResourceImg from "../assets/Group 3716.png";
+
+
 import { Button, Link, Image } from "@nextui-org/react";
 
 const Resources = () => {

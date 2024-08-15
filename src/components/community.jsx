@@ -5,6 +5,8 @@ import Img1 from "../assets/Rectangle 14.png";
 import Img2 from "../assets/Rectangle 44.png";
 import Img3 from "../assets/Rectangle 45.png";
 import Img4 from "../assets/Rectangle 46.png";
+import Svg1 from "../assets/Group 3717.png";
+import Svg2 from "../assets/Group 3718.png";
 const community = () => {
   return (
     <div className="flex lg:flex-row flex-col container mx-auto sm:px-6 lg:px-40 lg:my-24 mb-40 px-5 lg:gap-20">
