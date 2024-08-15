@@ -14,7 +14,7 @@ const Resources = () => {
     >
       <div className="w- flex-1 flex  items-center">
         <div className="flex flex-col">
-          <h1 className="font-bold text-2xl mb-5 p-">Get informed,  Stay ahead, Empower your Mind</h1>
+          <h1 className="font-bold lg:text-3xl text-2xl mb-5 p-">Get informed,  Stay ahead, Empower your Mind</h1>
           <small className="text mb-5 px-">Being informed about mental health helps us break stigmas and identify symptoms. Knowledge empowers us to support others and advocate for change.</small>
         </div>
       </div>
