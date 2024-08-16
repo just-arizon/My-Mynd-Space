@@ -36,7 +36,7 @@ const Landing = () => {
     animate={{ opacity: 1, y: 0 }} // Animate to its original position
     exit={{ opacity: 0, y: -50 }} // Exit to slightly above the view
     transition={{ duration: 0.5, ease: 'easeInOut' }} // Smooth transition
-    className="container mx-auto sm:px- lg:px- my-6 lg:my-12 px-3 flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10">
+    className="container mx-auto sm:px- lg:px- my-6 lg:my-12 px-3 flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10 text-[#2D2D2D]">
       <div className="w-full flex justify-start">
         <Image src={Circle} className="lg:hidden block"/>
       </div>
@@ -64,12 +64,12 @@ const Landing = () => {
                 <div className="flex flex-col justify-center mb-5 mt-5">
                   <div>
                     <h1
-                      className="text-black lg:text-3xl text-xl font-bold text-center lg:w-full
+                      className="text-[#2D2D2D] lg:text-3xl text-xl font-bold text-center lg:w-full
                     md:w-full"
                     >
                       Your peace of mind na our
                     </h1>
-                    <h1 className="text-black lg:text-3xl text-xl text-center font-bold">
+                    <h1 className="text-[#2D2D2D] lg:text-3xl text-xl text-center font-bold">
                       <span>priority,</span>
                       <span className="lg:text-3xl text-xl pt-20 font-bold text-[#FF6F61]">
                         {" "}

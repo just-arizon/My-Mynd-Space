@@ -41,12 +41,12 @@ const Community = () => {
   return (
 
     <>
-     <div className="flex justify-around absolute top-24 bg-pink- w-full gap-20 lg:flex hidden">
+     <div className="flex justify-around absolute top-40 bg-pink- w-full gap-20 lg:flex hidden">
      <div className="bg-orange-">
-       <Image alt="" src={Svg1} className="mt-5 lg:w-full relative -left-12" />
+       <Image alt="" src={Svg1} className="mt-5 lg:w-full relative left-8" />
      </div>
      <div className="bg-">
-       <Image alt="" src={Svg2} className="mt-5 lg:w-full relative right-16" />
+       <Image alt="" src={Svg2} className="mt-5 lg:w-full relative right-8" />
      </div>
      </div>
      <div className="flex justify-around absolute top-80 bg-pink- w-full gap-20 lg:flex hidden">
@@ -73,10 +73,10 @@ const Community = () => {
           ></div>
           <div className="landing relative flex flex-col justify-center items-center z-10">
             <div className="flex flex-col justify-center mb-8 mt-5">
-              <h1 className="text-black lg:text-3xl text-xl font-bold text-center">
+              <h1 className="text-[#2D2D2D] lg:text-3xl text-xl font-bold text-center">
                 Real Voices, Real Stories
               </h1>
-              <h1 className="text-black lg:text-3xl text-xl text-center font-bold">
+              <h1 className="text-[#2D2D2D] lg:text-3xl text-xl text-center font-bold">
                 <span className="lg:text-3xl text-xl pt-20 font-bold text-[#FF6F61]">
                   Our Community Speaks
                 </span>
@@ -103,7 +103,7 @@ const Community = () => {
       <section className="lg:mb-4 mb-3">
         <div className="flex flex-col justify-center mb-8 mt-5 gap-5">
           <div className="flex gap-2 justify-center">
-            <h1 className="text-black lg:text-3xl text-xl font-bold text-center">
+            <h1 className="text-[#2D2D2D] lg:text-3xl text-xl font-bold text-center">
               You are not alone,
               <span className="lg:text-3xl text-xl ml-2 font-bold text-[#FF6F61]">
                  Let’s Heal Together
@@ -130,6 +130,28 @@ const Community = () => {
           ))}
         </div>
       </section>
+
+
+      <section className="lg:my-20 my-10 mb-3 bg-blue- w-full">
+        <div className="flex flex-col justify- mb-8 mt-5 gap-5">
+          <div className="flex gap-2 justify-center">
+            <h1 className="text-[#2D2D2D] lg:text-3xl text-xl font-bold text-center">
+              You are not alone,
+              <span className="lg:text-3xl text-xl ml-2 font-bold text-[#81D4FA]">
+                 Real Testimonies
+              </span>
+            </h1>
+          </div>
+         
+        </div>
+
+        <div className="flex justify-start bg-pink- w-full">
+            <small className=" text-sm lg:w-">
+              Explores Stories of Hope From Our Community.
+            </small>
+          </div>
+      </section>
+
 
       <section className="">
         <Explore />

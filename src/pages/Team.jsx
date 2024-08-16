@@ -16,6 +16,7 @@ import {
   import memberImg4 from "../assets/Arinze.jpg";
   import memberImg5 from "../assets/Kosi.jpg";
   import memberImg6 from "../assets/Sola Oginni.jpg";
+  import memberImg7 from "../assets/Tolulope.jpg";
   import { motion } from "framer-motion";
 
 
@@ -87,9 +88,18 @@ import {
       id: 6,
       img: memberImg6,
       name: "Sola Oginni",
-      role: "University Student",
+      role: "UI/UX Designer",
       socials: {
         linkedin: "https://www.linkedin.com/in/sola-oginni-00a20a287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      },
+    },
+    {
+      id: 7,
+      img: memberImg7,
+      name: "Tolulope Olubiyi",
+      role: "UI/UX Designer",
+      socials: {
+        linkedin: "https://www.linkedin.com/in/tolulope-olubiyi",
       },
     },
   ];

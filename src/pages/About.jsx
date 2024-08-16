@@ -91,7 +91,7 @@ const About = () => {
   return (
     <motion.div
       {...motionSettings}
-      className="flex flex-col container mx-auto sm:px-6 lg:px-40 lg:my-12 mb-10 px-5 lg:gap-12 gap-8"
+      className="flex flex-col container mx-auto sm:px-6 lg:px-40 lg:my-12 mb-10 px-5 lg:gap-12 gap-8 text-[#2D2D2D]"
     >
       <section className="text-center my-5">
         <motion.h1

@@ -35,7 +35,7 @@ const GetStarted = () => {
       animate={{ opacity: 1, y: 0 }} // Animate to its original position
       exit={{ opacity: 0, y: -50 }} // Exit to slightly above the view
       transition={{ duration: 0.5, ease: "easeInOut" }} // Smooth transition
-      className="w-full relative"
+      className="w-full relative text-[#2D2D2D]"
     >
    
       <div className="flex  bg-  justify-between lg:py-10 lg:flex hidden">
@@ -87,7 +87,7 @@ const GetStarted = () => {
                 </p>
               </CardHeader>
               <CardBody className="pt-2 mt-4">
-                <small className=" text-center text-black leading-6">
+                <small className=" text-center text-[#2D2D2D] leading-6">
                   {item.body}
                 </small>
               </CardBody>

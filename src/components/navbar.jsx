@@ -33,7 +33,7 @@ export default function NavBar() {
         onMenuOpenChange={toggleMenu}
         lg:shouldHideOnScroll
         isBlurred={false}
-        className="shadow-md"
+        className="shadow-md text-[#2D2D2D]"
       >
         <div className="container mx-auto sm:px-6 lg:px-8 ">
           <div className="flex items-center justify-between h-16 ">
