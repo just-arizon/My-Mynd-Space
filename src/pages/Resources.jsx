@@ -6,7 +6,9 @@ import ResourceImg3 from "../assets/Group 3696.png";
 import Line2 from "../assets/Vector 8.png";
 import General from "./General-Mental-Health";
 import Mental from "./Mental-Health";
-
+import Conditions from "./Mental-Conditions";
+import Wellness from "./Wellness-Tips";
+import LifeStages from "./Life-Stages";
 import { Button, Link, Image } from "@nextui-org/react";
 
 const Resources = () => {
@@ -43,6 +45,9 @@ const Resources = () => {
             </div>
           <General />
           <Mental />
+          <Conditions />
+          <Wellness />
+          <LifeStages />
           </div>
          
         </div>
