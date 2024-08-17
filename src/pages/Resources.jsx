@@ -4,6 +4,8 @@ import ResourceImg from "../assets/Group 3716.png";
 import ResourceImg2 from "../assets/Rectangle 1240.png";
 import ResourceImg3 from "../assets/Group 3696.png";
 import Line2 from "../assets/Vector 8.png";
+import General from "./General-Mental-Health";
+import Mental from "./Mental-Health";
 
 import { Button, Link, Image } from "@nextui-org/react";
 
@@ -31,12 +33,16 @@ const Resources = () => {
       <section className="lg:my-20 my-10 mb-3 bg-blue- w-full">
         <div className="flex flex-col justify- mb-8 mt-5 gap-5">
           <div className="flex gap-2 justify-center flex-col">
-            <h1 className="text-[#2D2D2D] lg:text-3xl text-xl font-bold text-start">
-              Information Corner
-            </h1>
-            <div className="flex justify-start">
-            <Image alt="Our Story" src={Line2} className="lg:w-9/12 w-7/12"/>
-          </div>
+            <div className="mb-20">
+              <h1 className="text-[#2D2D2D] lg:text-3xl text-xl font-bold text-start">
+                Information Corner
+              </h1>
+              <div className="flex justify-start">
+              <Image alt="Our Story" src={Line2} className="lg:w-9/12 w-7/12"/>
+                        </div>
+            </div>
+          <General />
+          <Mental />
           </div>
          
         </div>

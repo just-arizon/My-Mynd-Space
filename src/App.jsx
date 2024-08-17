@@ -13,6 +13,7 @@ const About = React.lazy(() => import('./pages/About'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 const GetStarted = React.lazy(() => import('./pages/GetStarted'));
 const TeamMembers = React.lazy(() => import('./pages/Team'));
+const Error = React.lazy(() => import('./pages/ErrorPage'));
 
 export default function App() {
   const router = createBrowserRouter(
@@ -71,6 +72,14 @@ export default function App() {
             element={
               <Suspense fallback={<LoadingSpinner />}>
                 <TeamMembers />
+              </Suspense>
+            } 
+          />
+         <Route 
+            path="*" 
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <Error />
               </Suspense>
             } 
           />
