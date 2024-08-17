@@ -121,7 +121,7 @@ const Community = () => {
       </section>
 
       <section>
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-5  bg-[#F2F6F9] px-7 py-10 lg:">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-5  bg-[#F2F6F9] px-2 py-10 lg:">
           {activities.map((activity) => (
             <div key={activity.id} className="flex flex-col items-center bg-transparent">
               <Image src={activity.img} alt={activity.name} className=" w-full h-42 object-cover rounded-none" />
