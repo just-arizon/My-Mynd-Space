@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Image, Card, CardBody } from "@nextui-org/react";
+import { Image, Card, CardBody, Input } from "@nextui-org/react";
 import GridImg from "../assets/Grid-block.svg";
 import ResourceImg from "../assets/Group 3714.png";
 import Img1 from "../assets/pexels-shkrabaanthony-5890702 (1) 1.png";
@@ -13,6 +13,8 @@ import Svg1 from "../assets/Group 3717.png";
 import Svg2 from "../assets/Group 3718.png";
 import Svg3 from "../assets/Group 3719.png";
 import Svg4 from "../assets/Group 3721.png";
+import Line1 from "../assets/Vector 7.png";
+import Line2 from "../assets/Vector 6.png";
 
 const Community = () => {
   const activities = [
@@ -134,18 +136,22 @@ const Community = () => {
 
       <section className="lg:my-20 my-10 mb-3 bg-blue- w-full">
         <div className="flex flex-col justify- mb-8 mt-5 gap-5">
-          <div className="flex gap-2 justify-center">
+          <div className="flex gap-2 justify-center flex-col">
             <h1 className="text-[#2D2D2D] lg:text-3xl text-xl font-bold text-center">
               You are not alone,
               <span className="lg:text-3xl text-xl ml-2 font-bold text-[#81D4FA]">
                  Real Testimonies
               </span>
             </h1>
+            <div className="flex justify-center">
+            <Image alt="Our Story" src={Line1} className="lg:block hidden"/>
+            <Image alt="Our Story" src={Line2} className="lg:hidden block"/>
+          </div>
           </div>
          
         </div>
 
-        <div className="flex justify-start bg-pink- w-full">
+        <div className="flex justify-start bg-pink- w-full pl-">
             <small className=" text-sm lg:w-">
               Explores Stories of Hope From Our Community.
             </small>

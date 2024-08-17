@@ -13,7 +13,7 @@ import {
   import memberImg1 from "../assets/Abdulsamad.jpg";
   import memberImg2 from "../assets/Damilola.jpg";
   import memberImg3 from "../assets/Joel Maxwell.jpg";
-  import memberImg4 from "../assets/Arinze.jpg";
+  import memberImg4 from "../assets/Arizon2.jpg";
   import memberImg5 from "../assets/Kosi.jpg";
   import memberImg6 from "../assets/Sola Oginni.jpg";
   import memberImg7 from "../assets/Tolulope.jpg";
