@@ -70,7 +70,7 @@ const Community = () => {
       <div className="lg:mt-20 mt-8 mb-8 flex justify-center">
         <div className="relative flex flex-row">
           <div
-            className="grid-layout bg-cover bg-center lg:w-5/12 w-10/12 h-full absolute left-6 lg:left-40 lg:mx-44 opacity-20"
+            className="grid-layout bg-cover bg-center lg:w-5/12 w-10/12 h-full absolute left-6 lg:left-40 lg:mx-44 opacity-"
             style={{ backgroundImage: `url(${GridImg})`, opacity: 0.45 }}
           ></div>
           <div className="landing relative flex flex-col justify-center items-center z-10">

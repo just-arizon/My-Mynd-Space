@@ -28,7 +28,7 @@ const waitlist = () => {
         pagination={true}
         modules={[Pagination]}
         centeredSlides={true}
-        loop={true}
+        loop={false}
         slidesPerView={1}
         spaceBetween={40}
       >
@@ -91,35 +91,7 @@ const waitlist = () => {
 
         </div>
           </SwiperSlide>
-          <SwiperSlide className="bg-orange- flex justify-center">
-          <div className="relative flex flex-row flex-0 ">
-        <div
-              className="relative bg- lg:w-full "
-            >
-                <Image src={WaitlistImg} className=""/>
-                {/* <div className="flex flex-row text-white items-end lg:bottom-8 absolute z-20 lg:pl-10 px-5 bottom-2">
-                    <div className="flex-1">
-                        <h4 className="font-semibold lg:text-2xl lg:mb-3 -mb-2 text-lg lg:w-9/12">10 Tips to boost your mental health</h4>
-                        <div className="w-">
-            <small className="pr-5 leading-6 text-sm py-2 lg:block hidden">
-            Taking care of your mental health is as important as maintaining your physical health. One effective way to boost your mental well-being is by staying active......
-            </small>
-            <small className="pr-5 leading-6 text-sm py-2 lg:hidden block">
-            Taking care of your mental health is as important...
-            </small>
-            </div>
-                    </div>
-                    <div className="hidden lg:block">
-                        
-                        <Button className=" bg-transparent py-5 px-6 outline-none ">
-                            <Image src={Line2}/>
-                        </Button>
-                    </div>
-                </div> */}
-            </div>
-
-        </div>
-          </SwiperSlide>
+          
          
       </Swiper>
     </div>

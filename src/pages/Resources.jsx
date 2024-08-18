@@ -6,6 +6,7 @@ import ResourceImg3 from "../assets/Group 3696.png";
 import ResourceImg4 from "../assets/Group 3722.png";
 import Line2 from "../assets/Vector 8.png";
 import Line1 from "../assets/Vector 5.png";
+import Line3 from "../assets/Vector 6.png";
 import General from "./General-Mental-Health";
 import Mental from "./Mental-Health";
 import Conditions from "./Mental-Conditions";
@@ -40,7 +41,20 @@ const Resources = () => {
           <Image src={ResourceImg} alt="" className="lg:w- relative" />
         </div>
       </section>
-
+      <section className="lg:my-20 my-10 mb-3">
+      <div className="mb-20">
+              <h1 className="text-[#2D2D2D] lg:text-3xl text-xl font-bold text-start">
+                Top Picks
+              </h1>
+              <div className="flex justify-start">
+                <Image
+                  alt="Our Story"
+                  src={Line3}
+                  className="lg:w-11/12 w-7/12"
+                />
+              </div>
+            </div>
+      </section>
       <section className="lg:my-20 my-10 mb-3 bg-blue- w-full">
         <div className="flex flex-col justify- mb-8 mt-5 gap-5">
           <div className="flex gap-2 justify-center flex-col">

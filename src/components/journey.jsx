@@ -47,7 +47,7 @@ const journey = () => {
     },
   ];
   return (
-    <div className="container mx-auto sm:px-6 lg:px-40 my-16 lg:top-14 mx- relative top-36">
+    <div className="container mx-auto  lg:px-40 my-16 lg:top-14 mx- relative top-36">
       <style>
         {`
         .custom-mask {
@@ -178,7 +178,7 @@ const journey = () => {
         {cards.map((item, index) => (
           <SwiperSlide key={index} className="bg- ">
             <motion.div
-              className=""
+              className="px-3"
               initial={{opacity:0}}
               whileInView={{opacity:1}}
               

@@ -8,7 +8,7 @@ import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 
 const newsletter = () => {
   return (
-    <div className="flex lg:flex-row flex-col container mx-auto sm:px-6 lg:px-40 mt-28 mb-14 px-5 text-[#2D2D2D]">
+    <div className="flex lg:flex-row flex-col container mx-auto sm:px-6 lg:px-40 mt-48 mb-14 px-5 text-[#2D2D2D]">
       <div className="flex-1 items-center">
         <div className="container flex flex-col lg:pt-20">
           <div>
