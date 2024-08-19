@@ -42,11 +42,11 @@ const GeneralMentalHealth = () => {
         </Button>
       </div>
 
-      <section className="lg:flex flex-row lg:gap-10 ">
+      <section className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-10 ">
         {data.map((item) => (
           <motion.div
             key={item.id}
-            className="flex flex-col items-start w-full bg-white rounded-lg overflow-hidden shadow- gap-5 my-10"
+            className="flex flex-col items-start w- bg-white rounded-2xl overflow-hidden shadow- gap-5 my-10"
           >
             <Image src={item.img} alt={item.title} className="w-full h-auto object-cover" />
             <div className="flex-1 p-4 flex flex-col gap-3">
@@ -61,13 +61,13 @@ const GeneralMentalHealth = () => {
           </motion.div>
           
         ))}
+      </section>
         <div className="w-full lg:hidden flex justify-end">
             <Button className="bg-transparent py-5 pr-0 outline-none flex items-center gap-2">
             <span>View more</span>
             <Image src={Line} alt="Line" />
                   </Button>
         </div>
-      </section>
     </motion.div>
   );
 };

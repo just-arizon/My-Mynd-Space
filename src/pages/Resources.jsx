@@ -22,9 +22,9 @@ const Resources = () => {
       animate={{ opacity: 1, y: 0 }} // Animate to its original position
       exit={{ opacity: 0, y: -50 }} // Exit to slightly above the view
       transition={{ duration: 0.5, ease: "easeInOut" }}
-      className="container mx- sm:px- lg:px-36 px-12 my-6 lg:my-12 px-3 flex flex-col  gap-3 justify-center lg:justify-start lg:mb-28 mb-10 bg-pink-" // Smooth transition
+      className=" px-auto sm:px- lg:px-36 px-12 my-10 lg:my-12 px-5 flex  flex-col  gap-3 justify-center lg:justify-start lg:mb-28 mb-10 bg-pink- w-full" // Smooth transition
     >
-      <section className="lg:flex">
+      <section className="grid lg:grid-cols-2 md:grid-cols-2">
         <div className="w- flex-1 flex  items-center">
           <div className="flex flex-col">
             <h1 className="font-bold lg:text-3xl text-2xl mb-5 p-">
@@ -37,7 +37,7 @@ const Resources = () => {
             </small>
           </div>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex justify-center">
           <Image src={ResourceImg} alt="" className="lg:w- relative" />
         </div>
       </section>
@@ -58,7 +58,7 @@ const Resources = () => {
       <section className="lg:my-20 my-10 mb-3 bg-blue- w-full">
         <div className="flex flex-col justify- mb-8 mt-5 gap-5">
           <div className="flex gap-2 justify-center flex-col">
-            <div className="mb-20">
+            <div className="mb-14">
               <h1 className="text-[#2D2D2D] lg:text-3xl text-xl font-bold text-start">
                 Information Corner
               </h1>

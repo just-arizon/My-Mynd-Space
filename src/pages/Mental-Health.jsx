@@ -42,7 +42,7 @@ const MentalHealth = () => {
         </Button>
       </div>
 
-      <section className="lg:flex flex-row lg:gap-10 ">
+      <section className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-10">
         {data.map((item) => (
           <motion.div
             key={item.id}
@@ -61,13 +61,14 @@ const MentalHealth = () => {
           </motion.div>
           
         ))}
-        <div className="w-full lg:hidden flex justify-end">
+      
+      </section>
+      <div className="w-full lg:hidden flex justify-end">
             <Button className="bg-transparent py-5 pr-0 outline-none flex items-center gap-2">
             <span>View more</span>
             <Image src={Line} alt="Line" />
                   </Button>
         </div>
-      </section>
     </motion.div>
   );
 };

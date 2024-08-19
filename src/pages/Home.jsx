@@ -16,6 +16,7 @@ const Home = () => {
     animate={{ opacity: 1, y: 0 }} // Animate to its original position
     exit={{ opacity: 0, y: -50 }} // Exit to slightly above the view
     transition={{ duration: 0.5, ease: 'easeInOut' }} // Smooth transition
+    className="w-full"
     >
       <Landing />
       <Help />

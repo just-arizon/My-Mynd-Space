@@ -91,7 +91,7 @@ const About = () => {
   return (
     <motion.div
       {...motionSettings}
-      className="flex flex-col container mx-auto sm:px-6 lg:px-40 lg:my-12 mb-10 px-5 lg:gap-12 gap-8 text-[#2D2D2D]"
+      className="flex flex-col container mx-auto sm:px-6 lg:px-40 lg:my-12 mb-10 px-5 lg:gap-12 gap-8 text-[#2D2D2D] bg-orange-"
     >
       <section className="text-center my-5">
         <motion.h1
@@ -103,7 +103,10 @@ const About = () => {
             <Image alt="Our Story" src={Svg} />
           </div>
         </motion.h1>
-        <Image alt="About Us" src={AboutImg} className="mt-5" />
+        <div className="flex justify-center">
+          <Image alt="About Us" src={AboutImg} className="mt-5" />
+        </div>
+        
         <Card className="bg-[#F2F6F9] py-5 lg:p-12 rounded-2xl my-8 lg:w-9/12 mx-auto">
           <CardBody className="flex flex-col gap-5 p-5">
             <p className="text-sm leading-6">
@@ -135,7 +138,7 @@ const About = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-10">
-          <div className="lg:w-1/2 flex flex-col gap-8">
+          <div className="lg:w-1/2 grid lg:grid-cols-1 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <Image alt="Vision 1" src={vision1} />
             <Card className="bg-[#F2F6F9] p-5 rounded-3xl">
               <CardHeader className="pl-3">
@@ -156,7 +159,7 @@ const About = () => {
             </Card>
           </div>
 
-          <div className="lg:w-1/2 flex flex-col gap-8">
+          <div className="lg:w-1/2 grid lg:grid-cols-1 md:grid-cols-2 sm:grid-cols-1 gap-8">
             <Card className="bg-[#F2F6F9] p-5 rounded-3xl">
               <CardHeader className="pl-3">
                 <div className="flex flex-col">
@@ -192,7 +195,7 @@ const About = () => {
             Guiding principles that shape our commitment to mental well-being.
           </small>
         </div>
-        <div className="grid lg:grid-cols-2 gap-10 my-10">
+        <div className="grid lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-10 my-10">
           {coreValues.map((value) => (
             <Card key={value.id} className="bg-[#F2F6F9] p-5 rounded-3xl">
               <CardHeader className="flex flex-col justify-start">

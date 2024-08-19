@@ -126,7 +126,7 @@ const Team = () => {
 
         <motion.div
          {...motionSettings}
-        className="grid lg:grid-cols-3 gap-10 my-10">
+        className="grid lg:grid-cols-4 md:grid-cols-3 gap-10 my-10">
           {teamMembers.map((team) => (
             <div key={team.id} className="text-center">
               <Avatar src={team.img} className="w-32 h-32 mx-auto " />
