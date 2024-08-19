@@ -20,12 +20,12 @@ const GetStarted = () => {
     },
     {
       title: "Supportive Community",
-      body: "Track your mood with the MindMood Checker to gain insights and manage your mental health.",
+      body: "Join a welcoming community to share experiences, seek advice, and find support for your mental health journey.",
       img: Image2,
     },
     {
       title: "MindMood Checker",
-      body: "Join a welcoming community to share experiences, seek advice, and find support for your mental health journey.",
+      body: "Track your mood with the MindMood Checker to gain insights and manage your mental health.",
       img: Image3,
     },
   ];

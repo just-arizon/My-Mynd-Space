@@ -33,7 +33,7 @@ const GeneralMentalHealth = () => {
     <motion.div {...motionSettings} className="flex flex-col gap-8 border-b-1 border-[#C9C9C9] pb-12 mb-12">
       <div className="flex justify-between items-center">
         <div className="relative">
-          <h4 className="text-lg z-20">General Mental Health</h4>
+          <h4 className="lg:text-lg md:text-medium sm:text-medium z-20">General Mental Health</h4>
           <div className="bg-[#81D4FA] w-16 h-16 rounded-full absolute -right-8 -top-5 -z-20"></div>
         </div>
         <Button className="bg-transparent py-5 pl-0 outline-none flex items-center gap-2 lg:flex hidden">

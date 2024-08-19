@@ -35,7 +35,7 @@ const MediaLibrary = () => {
     <motion.div {...motionSettings} className="flex flex-col gap-8  pb-12 lg:mb-20 mb-10">
       <div className="flex justify-between items-center">
         <div className="relative">
-          <h4 className="text-lg z-20">Media Library</h4>
+          <h4 className="lg:text-lg md:text-medium sm:text-medium z-20">Media Library</h4>
           <div className="bg-[#81D4FA] w-16 h-16 rounded-full absolute -right-8 -top-5 -z-20"></div>
         </div>
         <Button className="bg-transparent py-5 pl-0 outline-none flex items-center gap-2 lg:flex hidden">
@@ -44,7 +44,7 @@ const MediaLibrary = () => {
         </Button>
       </div>
 
-      <section className="lg:flex flex-row lg:gap-10 ">
+      <section className="grid lg:grid-cols-2 md:grid-cols-3 sm:grid-cols-1 gap-10 ">
         {data.map((item) => (
           <motion.div
             key={item.id}
@@ -62,13 +62,14 @@ const MediaLibrary = () => {
           </motion.div>
           
         ))}
-        <div className="w-full lg:hidden flex justify-end">
+        
+      </section>
+      <div className="w-full lg:hidden flex justify-end">
             <Button className="bg-transparent py-5 pr-0 outline-none flex items-center gap-2">
             <span>View more</span>
             <Image src={Line} alt="Line" />
                   </Button>
         </div>
-      </section>
     </motion.div>
   );
 };
