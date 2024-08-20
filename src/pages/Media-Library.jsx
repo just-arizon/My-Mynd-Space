@@ -44,7 +44,7 @@ const MediaLibrary = () => {
         </Button>
       </div>
 
-      <section className="grid lg:grid-cols-2 md:grid-cols-3 sm:grid-cols-1 gap-10 ">
+      <section className="grid lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-10 ">
         {data.map((item) => (
           <motion.div
             key={item.id}

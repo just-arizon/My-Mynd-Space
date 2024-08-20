@@ -26,9 +26,9 @@ const community = () => {
           <div>
             <div className="flex lg:w-3/4 w-full">
               <div>
-                <h4 className="font-bold text-2xl mb-5 lg:text-3xl text-xl">
+                <h4 className="font-bold mb-5 lg:text-3xl md:text-2xl text-2xl ">
                   Real people,{" "}
-                  <span className="lg:text-3xl text-xl pt-20 font-bold text-[#FF6F61]">
+                  <span className="lg:text-3xl md:text-2xl sm:text-xl  pt-20 font-bold text-[#FF6F61]">
                     Real Stories
                   </span>
                 </h4>

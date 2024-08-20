@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaTwitter, FaLinkedin, FaBehance } from "react-icons/fa";
+import { FaTwitter, FaLinkedin, FaBehance, FaMedium } from "react-icons/fa";
 import { PiInstagramLogoFill } from "react-icons/pi";
 import {
     Avatar,
@@ -9,6 +9,7 @@ import {
     Image,
     Button,
     Link,
+    Tooltip
   } from "@nextui-org/react";
   import memberImg1 from "../assets/Abdulsamad.jpg";
   import memberImg2 from "../assets/Damilola.jpg";
@@ -78,8 +79,9 @@ import {
       socials: {
         linkedin:
           "https://www.linkedin.com/in/kosisochukwu-ani-735a941b8?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-           instagram:
-          "https://www.instagram.com/_kosiso_chukwu_?igsh=ODY5Z3JreDM2ZWw2",
+          //  instagram:
+          // "https://www.instagram.com/_kosiso_chukwu_?igsh=ODY5Z3JreDM2ZWw2",
+          medium: "https://www.medium.com/@kosisochukwucharityani"
       },
        
       },
@@ -105,7 +107,7 @@ import {
   ];
 const Team = () => {
   return (
-    <section className="lg:my-12  my-12">
+    <section className="lg:my-12 lg: my-12">
         <motion.h1
           {...motionSettings}
           className="text-center font-bold lg:text-3xl text-2xl mb-5 text-[#81D4FA]"
@@ -132,49 +134,70 @@ const Team = () => {
               <Avatar src={team.img} className="w-32 h-32 mx-auto " />
               <div className="flex justify-center gap-4 mt-4">
                 {team.socials.twitter && (
-                  <Button
-                    as={Link}
-                    isIconOnly
-                    href={team.socials.twitter}
-                    target="_blank"
-                    className=" w-10 h-10"
-                  >
-                    <FaTwitter size={16} />
-                  </Button>
+                  <Tooltip content="Twitter">
+                    <Button
+                      as={Link}
+                      isIconOnly
+                      href={team.socials.twitter}
+                      target="_blank"
+                      className=" w-10 h-10"
+                    >
+                      <FaTwitter size={16} />
+                    </Button>
+                  </Tooltip>
                 )}
                 {team.socials.linkedin && (
-                  <Button
-                    as={Link}
-                    isIconOnly
-                    href={team.socials.linkedin}
-                    target="_blank"
-                    className="text-blue-"
-                  >
-                    <FaLinkedin size={16} />
-                  </Button>
+                  <Tooltip content="LinkedIn">
+                    <Button
+                      as={Link}
+                      isIconOnly
+                      href={team.socials.linkedin}
+                      target="_blank"
+                      className="text-blue-"
+                    >
+                      <FaLinkedin size={16} />
+                    </Button>
+                  </Tooltip>
                 )}
 
                 {team.socials.behance && (
-                  <Button
-                    as={Link}
-                    isIconOnly
-                    href={team.socials.behance}
-                    target="_blank"
-                    className="text-blue-"
-                  >
-                    <FaBehance size={16} />
-                  </Button>
+                  <Tooltip content="Behance">
+                    <Button
+                      as={Link}
+                      isIconOnly
+                      href={team.socials.behance}
+                      target="_blank"
+                      className="text-blue-"
+                    >
+                      <FaBehance size={16} />
+                    </Button>
+                  </Tooltip>
                 )}
                 {team.socials.instagram && (
-                  <Button
-                    as={Link}
-                    isIconOnly
-                    href={team.socials.instagram}
-                    target="_blank"
-                    className="text-blue-"
-                  >
-                    <PiInstagramLogoFill size={16} />
-                  </Button>
+                  <Tooltip content="Behance">
+                    <Button
+                      as={Link}
+                      isIconOnly
+                      href={team.socials.instagram}
+                      target="_blank"
+                      className="text-blue-"
+                    >
+                      <PiInstagramLogoFill size={16} />
+                    </Button>
+                  </Tooltip>
+                )}
+                {team.socials.medium && (
+                  <Tooltip content="Medium">
+                    <Button
+                      as={Link}
+                      isIconOnly
+                      href={team.socials.medium}
+                      target="_blank"
+                      className="text-blue-"
+                    >
+                      <FaMedium size={16} />
+                    </Button>
+                  </Tooltip>
                 )}
               </div>
               <h6 className="font-bold mt-4">{team.name}</h6>

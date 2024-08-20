@@ -64,14 +64,14 @@ const Landing = () => {
                 <div className="flex flex-col justify-center mb-5 mt-5">
                   <div>
                     <h1
-                      className="text-[#2D2D2D] lg:text-3xl text-xl font-bold text-center lg:w-full
+                      className="text-[#2D2D2D] lg:text-3xl md:text-2xl text-2xl  font-bold text-center lg:w-full
                     md:w-full"
                     >
                       Your peace of mind na our
                     </h1>
-                    <h1 className="text-[#2D2D2D] lg:text-3xl text-xl text-center font-bold">
+                    <h1 className="text-[#2D2D2D] lg:text-3xl md:text-2xl text-2xl  text-center font-bold">
                       <span>priority,</span>
-                      <span className="lg:text-3xl text-xl pt-20 font-bold text-[#FF6F61]">
+                      <span className="lg:text-3xl md:text-2xl text-2xl  pt-20 font-bold text-[#FF6F61]">
                         {" "}
                         we dey here for you!
                       </span>

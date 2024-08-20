@@ -18,7 +18,7 @@ const waitlist = () => {
   return (
     <div className="container mx-auto px-3 lg:px-40 lg:my-16 lg:mb-20 lg:top-14 mx- relative lg:top-20 top-16 text-[#2D2D2D]">
       <div className="lg:w-3/4 lg:pr-36 bg- lg:mb-16 mb-8">
-        <h1 className="font-bold text-2xl lg:text-3xl text-xl">
+        <h1 className="font-bold lg:text-3xl md:text-2xl text-xl ">
           Join the waitlist and be the first to try out our coming features
         </h1>
       </div>

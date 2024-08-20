@@ -29,8 +29,8 @@ const Help = () => {
   ];
 
   return (
-    <div className="container mx-auto sm:px-6 lg:px-40 my-16 px-3">
-         <motion.h1 className="text-center font-bold lg:text-3xl text-xl mb-5">
+    <div className="container mx-auto sm:px-6 lg:px-40 my-28 px-3">
+         <motion.h1 className="text-center font-bold lg:text-3xl md:text-2xl text-2xl  mb-5">
                 <h4>How We Help</h4>
                 <div className="flex justify-center">
                     <Image
@@ -38,7 +38,7 @@ const Help = () => {
                      src={Svg}/>
                 </div>
             </motion.h1>
-        <div className="flex flex-wrap justify-center gap-12 py-10">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-12 justify-center py-10">
            
           {cards.map((item, index) => (
             <Card key={index} className="lg:w-72 w-80 pb-16 bg-[#F2F6F9]">

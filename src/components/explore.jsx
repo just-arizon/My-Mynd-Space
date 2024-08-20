@@ -9,7 +9,7 @@ import Img3 from "../assets/Rectangle 18.png";
 const explore = () => {
   return (
     <div className="flex lg:flex-col flex-col container mx-auto sm:px-6 lg:px-40 lg:py-10 pt- px-5 lg:gap-2 lg:mb-8 lg:mt-28 mt-56">
-      <h1 className="font-bold text-2xl lg:text-3xl text-xl">
+      <h1 className="font-bold lg:text-3xl md:text-2xl text-2xl mb-5">
         Explore <span className="text-[#FF6F61]">Resources</span>
       </h1>
       <div className="flex flex-col gap-2">

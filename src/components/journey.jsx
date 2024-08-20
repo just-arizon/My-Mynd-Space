@@ -137,7 +137,7 @@ const journey = () => {
       >
          <div className="w-full">
              <div className="flex justify-center bg-">
-                 <h4 className="text-center font-extrabold lg:text-3xl text-2xl mb-3">Inspiring Journeys</h4>
+                 <h4 className="text-center font-extrabold  lg:text-3xl md:text-2xl text-2xl  mb-3">Inspiring Journeys</h4>
              </div>
              <div className="w-full  flex justify-center">
                  <small className="text-center ">Tell your story and inspire others. Be a beacon of hope to someone.</small>

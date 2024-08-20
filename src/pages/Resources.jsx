@@ -31,6 +31,36 @@ const Resources = () => {
       transition={{ duration: 0.5, ease: "easeInOut" }}
       className=" px-auto sm:px- lg:px-36 px-12 my-10 lg:my-12 px-5 flex  flex-col  gap-3 justify-center lg:justify-start lg:mb-28 mb-10 bg-pink- w-full" // Smooth transition
     >
+        <style>
+        {`
+        .custom-mas {
+          -webkit-mask: linear-gradient(
+            90deg,
+            transparent,
+            white 5%,
+            white 90%,
+            transparent
+          );
+          mask: linear-gradient(90deg, transparent, white 5%, white 90%, transparent);
+        }
+
+            .swiper-pagination-bullet {
+          background-color: #ddd;
+          width: 8px;
+          height: 8px;
+          opacity: 1;
+          position: relative;
+          top: em;
+        }
+        .swiper-pagination-bullet-active {
+          background-color: #252525;
+          width: 18px;
+          height: 8px;
+          border-radius: 5px
+
+        }
+        `}
+      </style>
       <section className="grid lg:grid-cols-2 md:grid-cols-2">
         <div className="w- flex-1 flex  items-center">
           <div className="flex flex-col">
@@ -59,8 +89,13 @@ const Resources = () => {
         </div>
 
         <Swiper
-        className="w-full bg- mySwiper h- flex flex-col justify-center relative lg:pb-16 pb-8"
-        pagination={true}
+        className="w-full bg- mySwiper h- flex flex-col justify-center relative lg:pb-16 pb-8 relative"
+        pagination={{
+          clickable: true,
+          renderBullet: (index, className) => {
+            return `<span class="${className} custom-bullet"></span>`;
+          },
+        }}
         modules={[Pagination]}
         centeredSlides={true}
         loop={false}

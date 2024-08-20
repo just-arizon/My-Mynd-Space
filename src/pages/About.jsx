@@ -96,7 +96,7 @@ const About = () => {
       <section className="text-center my-5">
         <motion.h1
           {...motionSettings}
-          className="font-bold lg:text-3xl text-2xl"
+          className="font-bold lg:text-3xl md:text-2xl sm:text-xl "
         >
           <h4>Our Story</h4>
           <div className="flex justify-center">
@@ -128,7 +128,7 @@ const About = () => {
         <div className="mb-10">
           <motion.h1
             {...motionSettings}
-            className="font-bold lg:text-3xl text-2xl"
+            className="font-bold lg:text-3xl md:text-2xl sm:text-xl "
           >
             <h4>Our Vision & Mission</h4>
             <div className="flex justify-start">
@@ -186,7 +186,7 @@ const About = () => {
       <section className="lg:my-16 my-10">
         <motion.h1
           {...motionSettings}
-          className="font-bold lg:text-3xl text-2xl mb-5"
+          className="font-bold lg:text-3xl md:text-2xl sm:text-xl  mb-5"
         >
           <h4>Our Core Values</h4>
         </motion.h1>
@@ -225,7 +225,7 @@ const About = () => {
        <div className="mb-10">
           <motion.h1
             {...motionSettings}
-            className="font-bold lg:text-3xl text-2xl"
+            className="font-bold lg:text-3xl md:text-2xl sm:text-xl "
           >
             <h4>Partner with Us</h4>
             <div className="flex justify-start">
