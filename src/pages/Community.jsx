@@ -84,7 +84,7 @@ const Community = () => {
               style={{ backgroundImage: `url(${GridImg})`, opacity: 0.45 }}
             ></div>
             <div className="landing relative flex flex-col justify-center items-center z-10">
-              <div className="flex flex-col justify-center mb-8 mt-5">
+              <div className="flex flex-col justify-center mb-4 mt-5">
                 <h1 className="text-[#2D2D2D] lg:text-3xl md:text-2xl text-2xl font-bold text-center">
                   Real Voices, Real Stories
                 </h1>
@@ -94,7 +94,7 @@ const Community = () => {
                   </span>
                 </h1>
               </div>
-              <div className="lg:w-3/4 lg:px-56 px-12 flex justify-center mb-5">
+              <div className="lg:w-3/4 lg:px-56 px-6 flex justify-center mb-5">
                 <small className="text-center ">
                   Discover the diverse experiences of our community members.
                   From struggles to triumphs, these real stories highlight our
@@ -225,7 +225,7 @@ const Community = () => {
                   </div>
 
                   <div className=" lg:py-5">
-                    <small className="pr-5 leading-6 text-sm py-5">
+                    <small className="lg:pr-5 leading-6 text-sm py-5">
                       Don’t miss any information, stay updated always with our
                       timely newsletters. Subscribe below
                     </small>
