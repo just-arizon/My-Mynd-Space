@@ -6,7 +6,7 @@ import {motion} from 'framer-motion'
 function ErrorPage() {
   return (
     <motion.div 
-    className="flex items-center justify-center lg:gap-12  text-[#2D2D2D]  bg-gray-100 w-full h-screen">
+    className="flex items-center justify-center lg:gap-12  text-[#2D2D2D]  bg-gray-100 w-full h-screen px-10">
       <motion.div 
        initial={{ opacity: 0, scale: 0.5 }}
        animate={{ opacity: 1, scale: 1 }}

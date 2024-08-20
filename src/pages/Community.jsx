@@ -46,15 +46,15 @@ const Community = () => {
 
   return (
     <>
-      <div className="flex justify-around absolute lg:top-40 bg-pink- w-full lg:gap-20 gap-36 lg:flex ">
+      <div className="flex justify-around absolute lg:top-40 bg-pink- w-full lg:gap-20 gap-28 lg:flex ">
         <div className="bg-orange-">
-          <Image alt="" src={Svg1} className="mt-5 lg:w-full relative left-8" />
+          <Image alt="" src={Svg1} className="mt-5 lg:w-full relative lg:left-8 -left-2" />
         </div>
         <div className="bg-">
           <Image
             alt=""
             src={Svg2}
-            className="mt-5 lg:w-full relative right-8"
+            className="mt-5 lg:w-full relative lg:right-8"
           />
         </div>
       </div>
@@ -66,7 +66,7 @@ const Community = () => {
           <Image
             alt=""
             src={Svg4}
-            className="mt-5 lg:w-full relative right-8"
+            className="mt-5 lg:w-full relative right-2 lg:top-0 top-5"
           />
         </div>
       </div>
