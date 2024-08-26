@@ -1,0 +1,31 @@
+/* ScrollToTop.css */
+.scroll-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: .5rem;
+    z-index: 50;
+    background-color: #ddd;
+    padding: 0.75rem;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    background-clip: padding-box;
+    cursor: pointer;
+    animation: gradient-border 3s infinite;
+  }
+  
+  @keyframes gradient-border {
+    0% {
+      border-color: #ff6f61;
+    }
+    50% {
+      border-color: #81d4fa;
+    }
+    100% {
+      border-color: #ff6f61;
+    }
+  }
+  
+  .scroll-to-top:hover {
+    /* background-color: #ff3b2f; */
+  }
+  

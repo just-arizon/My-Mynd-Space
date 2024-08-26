@@ -3,6 +3,7 @@ import './App.css';
 import { createBrowserRouter, createRoutesFromElements, Route, Link, Outlet, RouterProvider } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
+import ScrollToTop from './components/scrollup';
 import { Spinner } from "@nextui-org/react";
 
 // Lazy load the pages
@@ -14,6 +15,7 @@ const Contact = React.lazy(() => import('./pages/Contact'));
 const GetStarted = React.lazy(() => import('./pages/GetStarted'));
 const TeamMembers = React.lazy(() => import('./pages/Team'));
 const Error = React.lazy(() => import('./pages/ErrorPage'));
+
 
 export default function App() {
   const router = createBrowserRouter(
@@ -92,6 +94,7 @@ export default function App() {
       <Navbar />
       <RouterProvider router={router} />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
