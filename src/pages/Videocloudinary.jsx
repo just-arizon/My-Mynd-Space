@@ -11,7 +11,7 @@ const Videocloudinary = () => {
     
     className="flex justify-center"
     >
-       <Card className="w-10/12 ">
+       <Card className="lg:w-11/12 ">
       <CardBody className='p-0'>
       <ReactPlayer
             url={videoFile} // Use the imported video file

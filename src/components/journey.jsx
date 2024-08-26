@@ -39,12 +39,12 @@ const journey = () => {
       author: "Rachel Babalola",
       profession: "University Student",
     },
-    {
-      title: "I’m no longer Depressed",
-      body: "Hi, I'm Rachel. I struggled with depression for years, but finding this website changed my life. The self-help tips and supportive community gave me the tools and encouragement I needed to get better. I'm now in a much better place, and I'm grateful for the difference this platform made in my journey.",
-      author: "Rachel Babalola",
-      profession: "University Student",
-    },
+    // {
+    //   title: "I’m no longer Depressed",
+    //   body: "Hi, I'm Rachel. I struggled with depression for years, but finding this website changed my life. The self-help tips and supportive community gave me the tools and encouragement I needed to get better. I'm now in a much better place, and I'm grateful for the difference this platform made in my journey.",
+    //   author: "Rachel Babalola",
+    //   profession: "University Student",
+    // },
   ];
   return (
     <div className="container mx-auto  lg:px-40 my-16 lg:top-14 mx- relative top-36">

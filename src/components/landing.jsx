@@ -36,8 +36,8 @@ const Landing = () => {
     exit={{ opacity: 0, y: -50 }} 
     transition={{ duration: 0.5, ease: 'easeInOut' }} 
     className="container mx-auto sm:px-6 lg:px-12 my-6 lg:my-12 px-3 flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10 text-[#2D2D2D]">
-      <div className="w-full flex justify-start">
-        <Image src={Circle} className="lg:hidden block"/>
+      <div className="w-full flex justify-start relative">
+        <Image src={Circle} className="lg:hidden block absolute top-10"/>
       </div>
       <div className="flex lg:justify-between w-full justify-center">
         <div className="hidden lg:block flex flex-col gap-8 w-1/4 py-8">
@@ -107,7 +107,7 @@ const Landing = () => {
           <div className="w-full pl-10 mt-4">
             <Image src={Circle} className="lg:hidden block"/>
           </div>
-          <div className="lg:hidden block flex justify-center z-10 mt-6 mb-5">
+          <div className="lg:hidden block flex justify-center z-10 mt-6 mb-5 px-3">
             <div className="flex gap-5">
               {avatars.map((avatar, index) => (
                 <div key={index} className="relative flex">
@@ -115,6 +115,7 @@ const Landing = () => {
                     src={avatar.img}
                     alt={`Avatar ${index + 1}`}
                     className="object-cover rounded-full"
+                    size="sm"
                   />
                 </div>
               ))}
@@ -141,7 +142,7 @@ const Landing = () => {
       <motion.div 
       initial={{opacity:0}}
       whileInView={{opacity:1}}
-      className="z-10 lg:mt-14 sm:px-6 lg:px-40 ">
+      className="z-10 lg:mt-14 sm:px- lg:px-40 ">
         <Videocloudinary />
       </motion.div>
     </motion.div>

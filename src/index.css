@@ -5,3 +5,6 @@
 *{
     /* border: 1px solid greenyellow; */
 }
+.Toastify__toast {
+    font-family: 'Poppins', sans-serif;
+}
