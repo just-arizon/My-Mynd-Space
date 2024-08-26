@@ -1,6 +1,9 @@
-import React from "react";
-import { motion } from "framer-motion";
-import { Image, Card, CardBody, Input } from "@nextui-org/react";
+import React, {useState} from "react";
+import { Image, Input } from "@nextui-org/react";
+import { Button } from "@nextui-org/button";
+import { toast, ToastContainer } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
+
 import GridImg from "../assets/Grid-block.svg";
 import ResourceImg from "../assets/Group 3714.png";
 import Img1 from "../assets/pexels-shkrabaanthony-5890702 (1) 1.png";
@@ -10,8 +13,6 @@ import Img4 from "../assets/pexels-diimejii-2380263 2.png";
 import Polygon1 from "../assets/Polygon 1.svg";
 import Polygon2 from "../assets/Polygon 2.svg";
 import NewsletterImg from "../assets/Group 3724.png";
-import { Button } from "@nextui-org/button";
-// import {Input} from "@nextui-org/input";
 import Explore from "../components/explore";
 import Svg1 from "../assets/Group 3717.png";
 import Svg2 from "../assets/Group 3718.png";
@@ -19,6 +20,8 @@ import Svg3 from "../assets/Group 3719.png";
 import Svg4 from "../assets/Group 3721.png";
 import Line1 from "../assets/Vector 7.png";
 import Line2 from "../assets/Vector 6.png";
+import { motion } from "framer-motion";
+
 
 const Community = () => {
   const activities = [
@@ -43,9 +46,40 @@ const Community = () => {
       name: "Live",
     },
   ];
+  const [email, setEmail] = useState("");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Simple validation
+    if (!email) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
+
+    try {
+      // Simulate an API call
+      const response = await fetch('/api/subscribe', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        toast.success("Subscription successful!");
+        setEmail("");
+      } else {
+        toast.error("Subscription failed. Please try again.");
+      }
+    } catch (error) {
+      toast.error("An error occurred. Please try again later.");
+    }
+  };
 
   return (
     <>
+      <ToastContainer /> {/* Add the ToastContainer for notifications */}
       <div className="flex justify-around absolute lg:top-40 bg-pink- w-full lg:gap-20 gap-28 lg:flex ">
         <div className="bg-orange-">
           <Image alt="" src={Svg1} className="mt-5 lg:w-full relative lg:left-8 -left-2" />
@@ -136,7 +170,7 @@ const Community = () => {
         </section>
 
         <section>
-          <div className="grid lg:grids-cols-4 md:grid-cols-4 grid-cols-2  gap-5  bg-[#F2F6F9] px-2 py-10 lg:">
+          <div className="grid lg:grids-cols-4 md:grid-cols-4 grid-cols-2  gap-5  bg-[#] px-2 py- lg:">
             {activities.map((activity) => (
               <div
                 key={activity.id}
@@ -148,7 +182,7 @@ const Community = () => {
                   className=" w-full h-42 object-cover rounded-none"
                 />
                 <div className="text-center mt-1">
-                  <h2 className="text-md font-semibold">{activity.name}</h2>
+                  <small className="text-md font-semibold py-4">{activity.name}</small>
                 </div>
               </div>
             ))}
@@ -205,8 +239,8 @@ const Community = () => {
                         />
                       </div>
                     </div>
-                    <h4 className="font-bold  lg:text-3xl md:text-2xl text-2xl mb-5">
-                      Subscribe to our newsletter today !
+                    <h4 className="font-bold lg:text-3xl md:text-2xl text-2xl mb-5">
+                      Subscribe to our newsletter today!
                     </h4>
                     <div className="px-5 relative">
                       <Image
@@ -216,31 +250,24 @@ const Community = () => {
                       />
                     </div>
                   </div>
-                  <div className="px-5 relative">
-                    <img
-                      src={Polygon1}
-                      alt=""
-                      className="w-5 absolute -top-5 left-3 hidden lg:block"
-                    />
-                  </div>
-
-                  <div className=" lg:py-5">
+                  <div className="lg:py-5">
                     <small className="lg:pr-5 leading-6 text-sm py-5">
                       Don’t miss any information, stay updated always with our
                       timely newsletters. Subscribe below
                     </small>
                   </div>
                   <div className="">
-                    <form action="" className="lg:flex gap-2">
-                      <div className=" lg:w-5/6 h-14">
+                    <form onSubmit={handleSubmit} className="lg:flex gap-2">
+                      <div className="lg:w-5/6 h-14">
                         <Input
                           type="email"
-                          label="your email address"
-                          className=" py-2 h-full  w-full rounded "
+                          placeholder="Your email address"
+                          onChange={(e) => setEmail(e.target.value)}
+                          className="py-2 h-full w-full rounded"
                         />
                       </div>
                       <div className="flex items-center">
-                        <Button className="bg-[#81D4FA] py-2 px-10 outline-none rounded-lg ">
+                        <Button type="submit" className="bg-[#81D4FA] py-2 px-10 outline-none rounded-lg">
                           Subscribe
                         </Button>
                       </div>
@@ -250,10 +277,12 @@ const Community = () => {
               </div>
             </div>
 
-            <div>
-              <div className="newsletter_img flex-1 flex justify-center py-2 bg-blue-">
-                <Image src={NewsletterImg} alt="" className="lg:w-" />
-              </div>
+            <div className="newsletter_img flex-1 flex justify-center py-2 bg-blue-">
+              <Image
+                src={NewsletterImg}
+                alt=""
+                className="lg:w-"
+              />
             </div>
           </div>
         </section>
