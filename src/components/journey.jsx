@@ -3,16 +3,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
+import { Card, CardHeader, CardBody, Image, Avatar } from "@nextui-org/react";
 import { motion } from "framer-motion";
 // import required modules
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
-import Img1 from "../assets/Ellipse 24.png";
-import Img2 from "../assets/Ellipse 23.png";
-import Img3 from "../assets/Ellipse 25.png";
-import Img4 from "../assets/Ellipse 26.png";
-import Img5 from "../assets/Ellipse 27.png";
-import Img6 from "../assets/Ellipse 28.png";
+import Img1 from "../assets/F1.jpg";
+import Img2 from "../assets/F2.jpg";
+import Img3 from "../assets/F3.jpg";
+import Img4 from "../assets/F4.jpg";
+import Img5 from "../assets/F5.jpg";
+import Img6 from "../assets/F6.jpg";
 const journey = () => {
   const cards = [
     {
@@ -81,25 +81,25 @@ const journey = () => {
       <div className="hidden absolute bg-  lg:flex w-10/12  bg- -z-10 -top-32 right-28 mt-10">
       <div className=" flex flex-col gap-8 flex-1 bg-pink- py-8 w-1/2">
           <div className="flex justify-start">
-            <Image src={Img3} alt={``} className="object-cover  rounded-full" />
+            <Avatar src={Img3} alt={``} className="object-cover  rounded-full" size="sm"/>
           </div>
           <div className="flex justify-center">
-            <Image src={Img6} alt={``} className="object-cover  rounded-full" />
+            <Avatar src={Img6} alt={``} className="object-cover  rounded-full" size="sm"/>
           </div>
           <div className="flex justify-start">
-            <Image src={Img2} alt={``} className="object-cover  rounded-full" />
+            <Avatar src={Img2} alt={``} className="object-cover  rounded-full" size="sm"/>
           </div>
         </div>
 
         <div className="flex flex-col gap-8 flex-1 py-8 bg-yellow- w-1/2">
           <div className="flex justify-end">
-            <Image src={Img5} alt={``} className="object-cover  rounded-full" />
+            <Avatar src={Img5} alt={``} className="object-cover  rounded-full" size="sm"/>
           </div>
           <div className="flex justify-center">
-            <Image src={Img4} alt={``} className="object-cover  rounded-full" />
+            <Avatar src={Img4} alt={``} className="object-cover  rounded-full" size="sm"/>
           </div>
           <div className="flex justify-end">
-            <Image src={Img1} alt={``} className="object-cover  rounded-full" />
+            <Avatar src={Img1} alt={``} className="object-cover  rounded-full" size="sm"/>
           </div>
         </div>
       </div>
@@ -108,25 +108,25 @@ const journey = () => {
       <div className="flex bg- justify-between lg:hidden block absolute -top-64 w-full -z-10">
       <div className=" flex flex-col gap-8 w-3/4 bg-pink- py-8">
           <div className="flex justify-start">
-            <Image src={Img1} alt={``} className="object-cover  rounded-full" />
+            <Avatar src={Img1} alt={``} className="object-cover  rounded-full" />
           </div>
           <div className="flex justify-center">
-            <Image src={Img2} alt={``} className="object-cover  rounded-full" />
+            <Avatar src={Img2} alt={``} className="object-cover  rounded-full" size="sm"/>
           </div>
           <div className="flex justify-start">
-            <Image src={Img3} alt={``} className="object-cover  rounded-full" />
+            <Avatar src={Img3} alt={``} className="object-cover  rounded-full" size="sm"/>
           </div>
         </div>
 
         <div className="flex flex-col gap-8 w-3/4 py-8 bg-yellow-">
           <div className="flex justify-end">
-            <Image src={Img5} alt={``} className="object-cover  rounded-full" />
+            <Avatar src={Img5} alt={``} className="object-cover  rounded-full" size="sm"/>
           </div>
           <div className="flex justify-center">
-            <Image src={Img4} alt={``} className="object-cover  rounded-full" />
+            <Avatar src={Img4} alt={``} className="object-cover  rounded-full" size="sm"/>
           </div>
           <div className="flex justify-end">
-            <Image src={Img6} alt={``} className="object-cover  rounded-full" />
+            <Avatar src={Img6} alt={``} className="object-cover  rounded-full" size="sm"/>
           </div>
         </div>
       </div>
@@ -187,7 +187,7 @@ const journey = () => {
               whileInView={{opacity:1}}
               
             >
-              <Card className="lg:w-96 w-full h-full px-5 bg-[#F2F6F9] pt-4 shadow-xl">
+              <Card className="lg:w-96 w-full h-full px-5 bg-[#F2F6F9] pt-4 shadow-none">
                 <div className="">
                   <div className=" w-full">
                     <CardHeader className=" text-base flex justify-center">
