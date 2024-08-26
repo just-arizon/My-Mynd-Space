@@ -127,7 +127,7 @@ const Community = () => {
               </h1>
             </div>
             <div className="flex justify-center">
-              <small className="text-center text-sm lg:w-8/12">
+              <small className="text-center text- lg:w-8/12">
                 Explore real stories and share your own. Exercise, read,
                 connect, and heal together with our community.
               </small>

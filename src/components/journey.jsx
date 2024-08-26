@@ -155,6 +155,10 @@ const journey = () => {
             return `<span class="${className} custom-bullet"></span>`;
           },
         }}
+        autoplay={{
+          delay: 2000,
+          disableOnInteraction: false,
+        }}
         effect={"coverflow"}
         coverflowEffect={{
           rotate: 0,
@@ -171,7 +175,7 @@ const journey = () => {
               spaceBetween: 150,
             },
           }}
-        modules={[Pagination, EffectCoverflow]}
+        modules={[Autoplay, Pagination, EffectCoverflow]}
         className="w-full bg- mySwiper  lg:h-96 h-96 flex flex-col justify-center relative px-3"
       >
 
