@@ -1,9 +1,9 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Image, Input } from "@nextui-org/react";
 import { Button } from "@nextui-org/button";
 import { toast, ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
-
+import "react-toastify/dist/ReactToastify.css";
+import { FaTag } from "react-icons/fa6";
 import GridImg from "../assets/Grid-block.svg";
 import ResourceImg from "../assets/Group 3714.png";
 import Img1 from "../assets/pexels-shkrabaanthony-5890702 (1) 1.png";
@@ -24,7 +24,6 @@ import { motion } from "framer-motion";
 import StoryImg1 from "../assets/Rectangle 66.png";
 import StoryImg2 from "../assets/Rectangle 1234.png";
 import StoryImg3 from "../assets/Rectangle 1232.png";
-
 
 const Community = () => {
   const activities = [
@@ -61,10 +60,10 @@ const Community = () => {
 
     try {
       // Simulate an API call
-      const response = await fetch('/api/subscribe', {
-        method: 'POST',
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({ email }),
       });
@@ -86,35 +85,42 @@ const Community = () => {
       occupation: "University Student",
       tag: "Men's Corner",
       storyTitle: "Lorem Ipsum",
-      storyBody: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim m, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum  ",
-      storyCta: "Read full story"
+      storyBody:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim m, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum  ",
+      storyCta: "Read full story",
     },
     {
       img: StoryImg2,
       person: "Rachel Babiola",
       occupation: "University Student",
-      tag: "Men's Corner",
+      tag: "Women's Corner",
       storyTitle: "Lorem Ipsum",
-      storyBody: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim m, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum  ",
-      storyCta: "Read full story"
+      storyBody:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim m, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum  ",
+      storyCta: "Read full story",
     },
     {
       img: StoryImg3,
       person: "Rachel Babiola",
       occupation: "University Student",
-      tag: "Men's Corner",
+      tag: "Youth's Corner",
       storyTitle: "Lorem Ipsum",
-      storyBody: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim m, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum  ",
-      storyCta: "Read full story"
+      storyBody:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim m, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum  ",
+      storyCta: "Read full story",
     },
-  ]
+  ];
 
   return (
     <>
       <ToastContainer /> {/* Add the ToastContainer for notifications */}
       <div className="flex justify-around absolute lg:top-40 bg-pink- w-full lg:gap-20 gap-28 lg:flex ">
         <div className="bg-orange-">
-          <Image alt="" src={Svg1} className="mt-5 lg:w-full relative lg:left-8 -left-2" />
+          <Image
+            alt=""
+            src={Svg1}
+            className="mt-5 lg:w-full relative lg:left-8 -left-2"
+          />
         </div>
         <div className="bg-">
           <Image
@@ -214,7 +220,9 @@ const Community = () => {
                   className=" w-full h-42 object-cover rounded-none"
                 />
                 <div className="text-center mt-1">
-                  <small className="text-md font-semibold py-4">{activity.name}</small>
+                  <small className="text-md font-semibold py-4">
+                    {activity.name}
+                  </small>
                 </div>
               </div>
             ))}
@@ -251,26 +259,38 @@ const Community = () => {
             </small>
           </div>
           <div className="flex  bg-pink- w-full mb-8 text-2xl font-bold">
-            <h1 className=" text-start lg:w-">
-              Feature Story
-            </h1>
+            <h1 className=" text-start lg:w-">Feature Story</h1>
           </div>
-          <div className="grid">
+          <div className="grid gap-12">
             {stories.map((story, index) => (
-            <div className="flex gap-5" key={index}>
-              <div className="flex-1">
-<Image src={story.img} alt="story image" className="w-"/>
-<div className="grid pt-3 pb-5">
-  <div className="font-semibold">{story.person}</div>
-  <div className="">{story.occupation}</div>
-</div>
+              <div className="lg:flex gap-5" key={index}>
+                <div className="flex-1">
+                  <div className="flex justify-start my-5">
+                    <small className="flex py-2 px-5 w- font-semibold bg-[#F2F6F9] lg:hidden rounded-xl gap-2">
+                  <div className="py-1 bg-">
+                    <FaTag className="text-[#FF6F61] items-center"/>
+                  </div>
+
+                      {story.tag}
+                    </small>
+                  </div>
+                  <Image src={story.img} alt="story image" className="w-" />
+                  <div className="grid pt-3 pb-5">
+                    <small className="font-semibold">{story.person}</small>
+                    <small className="">{story.occupation}</small>
+                  </div>
+                </div>
+                <div className="flex-1 gap-5 flex flex-col">
+                  <small className="hidden lg:block">{story.tag}</small>
+                  <div className="text-xl font-semibold">
+                    {story.storyTitle}
+                  </div>
+                  <small className="">{story.storyBody}</small>
+                  <div className="">
+                    <Button className="bg-[#81D4FA]">{story.storyCta}</Button>
+                  </div>
+                </div>
               </div>
-              <div className="flex-1 gap-5 flex flex-col">
-<div className="">{story.tag}</div>
-<div className="text-xl font-semibold">{story.storyTitle}</div>
-<div className="">{story.storyBody}</div>
-              </div>
-            </div>
             ))}
           </div>
         </section>
@@ -322,7 +342,10 @@ const Community = () => {
                         />
                       </div>
                       <div className="flex items-center">
-                        <Button type="submit" className="bg-[#81D4FA] py-2 px-10 outline-none rounded-lg">
+                        <Button
+                          type="submit"
+                          className="bg-[#81D4FA] py-2 px-10 outline-none rounded-lg"
+                        >
                           Subscribe
                         </Button>
                       </div>
@@ -333,11 +356,7 @@ const Community = () => {
             </div>
 
             <div className="newsletter_img flex-1 flex justify-center py-2 bg-blue-">
-              <Image
-                src={NewsletterImg}
-                alt=""
-                className="lg:w-"
-              />
+              <Image src={NewsletterImg} alt="" className="lg:w-" />
             </div>
           </div>
         </section>
