@@ -21,6 +21,9 @@ import Svg4 from "../assets/Group 3721.png";
 import Line1 from "../assets/Vector 7.png";
 import Line2 from "../assets/Vector 6.png";
 import { motion } from "framer-motion";
+import StoryImg1 from "../assets/Rectangle 66.png";
+import StoryImg2 from "../assets/Rectangle 1234.png";
+import StoryImg3 from "../assets/Rectangle 1232.png";
 
 
 const Community = () => {
@@ -76,6 +79,35 @@ const Community = () => {
       toast.error("An error occurred. Please try again later.");
     }
   };
+  const stories = [
+    {
+      img: StoryImg1,
+      person: "Rachel Babiola",
+      occupation: "University Student",
+      tag: "Men's Corner",
+      storyTitle: "Lorem Ipsum",
+      storyBody: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim m, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum  ",
+      storyCta: "Read full story"
+    },
+    {
+      img: StoryImg2,
+      person: "Rachel Babiola",
+      occupation: "University Student",
+      tag: "Men's Corner",
+      storyTitle: "Lorem Ipsum",
+      storyBody: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim m, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum  ",
+      storyCta: "Read full story"
+    },
+    {
+      img: StoryImg3,
+      person: "Rachel Babiola",
+      occupation: "University Student",
+      tag: "Men's Corner",
+      storyTitle: "Lorem Ipsum",
+      storyBody: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim m, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum  ",
+      storyCta: "Read full story"
+    },
+  ]
 
   return (
     <>
@@ -189,7 +221,7 @@ const Community = () => {
           </div>
         </section>
 
-        <section className="lg:my-20 my-10 mb-3 bg-blue- w-full">
+        <section className="lg:my-20 my-10 mb-3 bg-blue- w-full lg:px-16">
           <div className="flex flex-col justify- mb-8 mt-5 gap-5">
             <div className="flex gap-2 justify-center flex-col">
               <h1 className="text-[#2D2D2D] lg:text-3xl md:text-2xl text-2xl font-bold text-center">
@@ -213,10 +245,33 @@ const Community = () => {
             </div>
           </div>
 
-          <div className="flex justify-center bg-pink- w-full pl-">
-            <small className=" text-center lg:w-">
+          <div className="flex justify-start bg-pink- w-full py-8">
+            <small className=" text-start lg:w-">
               Explores Stories of Hope From Our Community.
             </small>
+          </div>
+          <div className="flex  bg-pink- w-full mb-8 text-2xl font-bold">
+            <h1 className=" text-start lg:w-">
+              Feature Story
+            </h1>
+          </div>
+          <div className="grid">
+            {stories.map((story, index) => (
+            <div className="flex gap-5" key={index}>
+              <div className="flex-1">
+<Image src={story.img} alt="story image" className="w-"/>
+<div className="grid pt-3 pb-5">
+  <div className="font-semibold">{story.person}</div>
+  <div className="">{story.occupation}</div>
+</div>
+              </div>
+              <div className="flex-1 gap-5 flex flex-col">
+<div className="">{story.tag}</div>
+<div className="text-xl font-semibold">{story.storyTitle}</div>
+<div className="">{story.storyBody}</div>
+              </div>
+            </div>
+            ))}
           </div>
         </section>
 

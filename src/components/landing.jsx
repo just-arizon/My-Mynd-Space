@@ -115,7 +115,7 @@ const Landing = () => {
                     src={avatar.img}
                     alt={`Avatar ${index + 1}`}
                     className="object-cover rounded-full"
-                    size="sm"
+                    size="md"
                   />
                 </div>
               ))}
