@@ -81,32 +81,32 @@ const Community = () => {
   const stories = [
     {
       img: StoryImg1,
-      person: "Rachel Babiola",
-      occupation: "University Student",
+      person: "Philip Chukwuma",
+      occupation: "Banker",
       tag: "Men's Corner",
-      storyTitle: "Lorem Ipsum",
+      storyTitle: "Anxiety & Career Burnout",
       storyBody:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim m, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum  ",
+        "Mr Philip is burnt out at work and needs a new job or to start a business, but he's unsure where to begin. His emotional instability is affecting his job performance. He wants to talk to someone but fears burdening family and friends, as they might think he's just trying to avoid responsibilities.  ",
       storyCta: "Read full story",
     },
     {
       img: StoryImg2,
-      person: "Rachel Babiola",
-      occupation: "University Student",
+      person: "Gmebisola Timothy",
+      occupation: "Entrepreneur",
       tag: "Women's Corner",
-      storyTitle: "Lorem Ipsum",
+      storyTitle: "Suicidal Gbemisola",
       storyBody:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim m, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum  ",
+        "Gbemisola feels utterly hopeless, convinced that her future holds no promise and that her efforts are futile. The overwhelming sense of being a burden weighs heavily on her, pushing her deeper into despair, where she believes there's no escape other than ending her life. She thinks no one care but....",
       storyCta: "Read full story",
     },
     {
       img: StoryImg3,
-      person: "Rachel Babiola",
+      person: "Jane Edidiong",
       occupation: "University Student",
       tag: "Youth's Corner",
-      storyTitle: "Lorem Ipsum",
+      storyTitle: "Social Anxiety Disorder",
       storyBody:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim m, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum  ",
+        "Jane, a 21-year-old 400 level University Student, often feels intense fear before team meetings. She worries excessively about being judged or saying something wrong. This anxiety leads her to avoid participating in discussions, affecting her job performance and social interactions.",
       storyCta: "Read full story",
     },
   ];
@@ -280,8 +280,16 @@ const Community = () => {
                     <small className="">{story.occupation}</small>
                   </div>
                 </div>
-                <div className="flex-1 gap-5 flex flex-col">
-                  <small className="hidden lg:block">{story.tag}</small>
+                <div className="flex-1 gap-5 flex flex-col justify-center bg-purple-200 h-96">
+                <div className="flex justify-start lg:my-2 my-5">
+                    <small className="flex py-2 px-5 w- font-semibold bg-[#F2F6F9] lg:flex hidden rounded-xl gap-2">
+                  <div className="py-1 bg-">
+                    <FaTag className="text-[#FF6F61] items-center"/>
+                  </div>
+
+                      {story.tag}
+                    </small>
+                  </div>
                   <div className="text-xl font-semibold">
                     {story.storyTitle}
                   </div>
