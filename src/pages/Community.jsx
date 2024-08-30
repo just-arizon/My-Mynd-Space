@@ -280,8 +280,8 @@ const Community = () => {
                     <small className="">{story.occupation}</small>
                   </div>
                 </div>
-                <div className="flex-1 gap-5 flex flex-col justify-center bg-purple- h-96">
-                <div className="flex justify-start lg:my-2 my-5">
+                <div className="flex-1 gap-5 flex flex-col lg:justify-center bg-purple- lg:h-96">
+                <div className="flex justify-start lg:my-2 my-1">
                     <small className="flex py-2 px-5 w- font-semibold bg-[#F2F6F9] lg:flex hidden rounded-xl gap-2">
                   <div className="py-1 bg-">
                     <FaTag className="text-[#FF6F61] items-center"/>
