@@ -1,10 +1,10 @@
+import { Avatar, Card, CardBody, CardHeader } from "@nextui-org/react";
+import { motion } from "framer-motion";
 import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
-import { Card, CardHeader, CardBody, Image, Avatar } from "@nextui-org/react";
-import { motion } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
 // import required modules
 import { Autoplay, EffectCoverflow, Pagination } from "swiper/modules";
 import Img1 from "../assets/F1.jpg";

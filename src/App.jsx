@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import './App.css';
-import { createBrowserRouter, createRoutesFromElements, Route, Link, Outlet, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider, Outlet } from 'react-router-dom';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import ScrollToTop from './components/scrollup';
@@ -14,6 +14,7 @@ const About = React.lazy(() => import('./pages/About'));
 const Contact = React.lazy(() => import('./pages/Contact'));
 const GetStarted = React.lazy(() => import('./pages/GetStarted'));
 const TeamMembers = React.lazy(() => import('./pages/Team'));
+const MindMoodChecker = React.lazy(() => import('./pages/MindMoodChecker'));
 const Error = React.lazy(() => import('./pages/ErrorPage'));
 
 
@@ -78,6 +79,14 @@ export default function App() {
             } 
           />
          <Route 
+            path="/mood-checker" 
+            element={
+              <Suspense fallback={<LoadingSpinner />}>
+                <MindMoodChecker />
+              </Suspense>
+            } 
+          />
+         <Route 
             path="*" 
             element={
               <Suspense fallback={<LoadingSpinner />}>
@@ -102,12 +111,7 @@ export default function App() {
 const Root = () => {
   return (
     <>
-      <div>
-        <Link to="/"></Link>
-      </div>
-      <div>
-        <Outlet />
-      </div>
+      <Outlet />
     </>
   );
 }

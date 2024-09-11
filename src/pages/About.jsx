@@ -222,62 +222,67 @@ const About = () => {
         <TeamMembers />
       </section>
       <section className="lg:my-12 mt-6 mb-10">
-       <div className="mb-10">
-          <motion.h1
-            {...motionSettings}
-            className="font-bold lg:text-3xl md:text-2xl text-2xl "
-          >
-            <h4>Partner with Us</h4>
-            <div className="flex justify-start">
-              <Image alt="Vision & Mission" src={partnersvg} className="lg:w-3/4 w-48" />
-            </div>
-          </motion.h1>
-        </div>
-        <div className="flex gap-8 flex-col lg:flex-row">
-        <div className="flex-1">
-        <Card className="bg-[#F2F6F9] py-4 px-5 lg:px-4 rounded-2xl lg:my-8 lg:w-9/ ">
+  <div className="mb-10">
+    <motion.h1
+      {...motionSettings}
+      className="font-bold lg:text-3xl md:text-2xl text-2xl "
+    >
+      <h4>Partner with Us</h4>
+      <div className="flex justify-start">
+        <Image alt="Vision & Mission" src={partnersvg} className="lg:w-3/4 w-48" />
+      </div>
+    </motion.h1>
+  </div>
+  <div className="flex gap-8 flex-col lg:flex-row">
+    <div className="flex-1">
+      <Card className="bg-[#F2F6F9] py-4 px-5 lg:px-4 rounded-2xl lg:my-8 lg:w-9/ ">
         <CardHeader className="font-semibold lg:text-2xl text-xl mt-2 text-start">
-        Be a part of the solution as we shine the light on Mental Health together!
+          Be a part of the solution as we shine the light on Mental Health together!
         </CardHeader>
-          <CardBody className="flex flex-col">
-            <p className="text-sm leading-6">
-              Join us at MyMindSpace in shining a light on mental health. Together, we can create a supportive community, raise awareness, and make a positive impact on mental well-being. Your involvement can help spread knowledge, reduce stigma, and provide essential resources to those in need. Let’s inspire change and build a healthier, more compassionate world.
-            </p>
-          </CardBody>
-        </Card>
-        <Card className="bg-[#F2F6F9] py-8 lg:px-4 my-10 lg:flex hidden">
-          <div className="flex gap-5 px-5">
-            <Image src={Frame} className="rounded-none"/>
-            <h6 className="text-xl font-semibold">Click to send us an email for more information</h6>
-          </div>
-        </Card>
-        </div>
-        <div className="my-8 flex-1">
-          <div className="">
-            <Image src={partnerImg}/>
-          </div>
-          <div className="grid grid-cols-2 gap-4 lg:mt-2 mt-8">
-          {partnersData.map((partner) => (
-                <Card key={partner.id} className="bg-[#F2F6F9] lg:p-3 rounded-lg py-5">
-                  <CardHeader className="text-xl font-bold text-[#FF6F61] bg- lg:py-0 flex justify-center">
-                    <div>{partner.count}</div>
-                  </CardHeader>
-                  <CardBody className="text-sm text-center py-0">
-                    {partner.remark}
-                  </CardBody>
-                </Card>
-              ))}
-          </div>
-        </div>
+        <CardBody className="flex flex-col">
+          <p className="text-sm leading-6">
+            Join us at MyMindSpace in shining a light on mental health. Together, we can create a supportive community, raise awareness, and make a positive impact on mental well-being. Your involvement can help spread knowledge, reduce stigma, and provide essential resources to those in need. Let’s inspire change and build a healthier, more compassionate world.
+          </p>
+        </CardBody>
+      </Card>
 
-        <Card className="bg-[#F2F6F9] py-8 lg:px-4 my-10 lg:hidden flex">
-          <div className="flex gap-5 px-5">
-            <Image src={Frame} className="rounded-none"/>
-            <h6 className="text-xl font-semibold">Click to send us an email for more information</h6>
+      {/* Replace the card with the button */}
+      <div className="my- flex items- gap- bg-pink-">
+        <Button
+          onClick={() => window.location.href = 'mailto:your-email@example.com'}
+          className="bg-[#F2F6F9] py-8 px-5 w-full text-lg font-semibold flex justify-between"
+        >
+          <div className=" bg-orange- flex justify-center">
+            <Image src={Frame} className="rounded-none w-10" />
           </div>
-        </Card>
-        </div>
-      </section>
+          <div className="w-11/12 bg-orange-">
+            <div>Click to send us an email</div> 
+            <div className=" ">for more information</div>
+            </div>
+        </Button>
+      </div>
+    </div>
+
+    <div className="my-8 flex-1">
+      <div className="">
+        <Image src={partnerImg} />
+      </div>
+      <div className="grid grid-cols-2 gap-4 lg:mt-2 mt-8">
+        {partnersData.map((partner) => (
+          <Card key={partner.id} className="bg-[#F2F6F9] lg:p-3 rounded-lg py-5">
+            <CardHeader className="text-xl font-bold text-[#FF6F61] bg- lg:py-0 flex justify-center">
+              <div>{partner.count}</div>
+            </CardHeader>
+            <CardBody className="text-sm text-center py-0">
+              {partner.remark}
+            </CardBody>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
     </motion.div>
   );
 };

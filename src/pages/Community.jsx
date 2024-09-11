@@ -229,7 +229,7 @@ const Community = () => {
           </div>
         </section>
 
-        <section className="lg:my-20 my-10 mb-3 bg-blue- w-full lg:px-16">
+        <section className="flex lg:flex-col flex-col container mx-auto sm:px-6 lg:px-40 lg:py- pt- px-5 lg:gap-2 lg:mb-8 lg:mt-28 mt-52">
           <div className="flex flex-col justify- mb-8 mt-5 gap-5">
             <div className="flex gap-2 justify-center flex-col">
               <h1 className="text-[#2D2D2D] lg:text-3xl md:text-2xl text-2xl font-bold text-center">
@@ -242,12 +242,12 @@ const Community = () => {
                 <Image
                   alt="Our Story"
                   src={Line1}
-                  className="lg:block hidden"
+                  className=" hidden"
                 />
                 <Image
                   alt="Our Story"
                   src={Line2}
-                  className="lg:hidden block"
+                  className=""
                 />
               </div>
             </div>

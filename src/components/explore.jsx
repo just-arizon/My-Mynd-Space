@@ -1,9 +1,9 @@
-import React from "react";
 import { Button } from "@nextui-org/button";
 import { Image, Link } from "@nextui-org/react";
+import React from "react";
+import Line2 from "../assets/Line 2.png";
 import Line from "../assets/Line 3.png";
 import ExploreImg from "../assets/Rectangle 16.png";
-import Line2 from "../assets/Line 2.png";
 import Img2 from "../assets/Rectangle 17.png";
 import Img3 from "../assets/Rectangle 18.png";
 const explore = () => {
@@ -38,9 +38,9 @@ const explore = () => {
     </div>
       <div className="flex w-full lg:flex-row flex-col pt-10">
 
-        <div className="relative flex flex-row flex-0 ">
+        <div className="relative flex flex-row flex- bg-pink-">
         <div
-              className="relative bg- lg:w-full "
+              className="relative bg- lg:w-full overflow-hidden"
             >
                 <Image src={ExploreImg} className=""/>
                 <div className="flex flex-row text-white items-end lg:bottom-8 absolute z-20 lg:pl-10 px-5 bottom-2">
@@ -67,11 +67,11 @@ const explore = () => {
         </div>
 
 
-        <div className="flex lg:flex-0 justify-between lg:px-8 py-10 lg:py-0">
-                <div className="flex lg:flex-col flex-row  lg:gap-8 gap-2 w-fit ">
-                    <div className="relative"
+        <div className="flex lg:flex- justify-between lg:px-8 py-10 lg:py-0 bg-purple-">
+                <div className="flex lg:flex-col flex-row  lg:gap-8 gap-2 w- ">
+                    <div className="relative "
                                   >
-                                    <Image src={Img2} className="w-full"/>
+                                    <Image src={Img2} className="w-"/>
                         <div className="flex flex-row text-white items-end bottom-2 absolute z-20 px-4">
                     <div className="flex-1">
                         <h4 className="font-semibold text-sm mb- ">Self-Care for Mental Wellbeing</h4>

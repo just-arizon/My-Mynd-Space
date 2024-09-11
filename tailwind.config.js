@@ -10,7 +10,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        poppins: ['Poppins', 'sans-serif'],
+        outfit: ['Outfit', 'sans-serif'],
       },
       backgroundImage: {
         'custom-image': "url('/images/your-image.jpg')",

@@ -1,22 +1,22 @@
-import React from "react";
 import {
-  Link,
+  Avatar,
   Button,
   Image,
-  Avatar
+  Link
 } from "@nextui-org/react";
-import Videocloudinary from "../pages/Videocloudinary";
-import GridImg from "../assets/Grid-block.svg";
+import { motion } from "framer-motion";
+import React from "react";
+import Circle from "../assets/Ellipse 22.png";
 import Img1 from "../assets/F1.jpg";
 import Img2 from "../assets/F2.jpg";
 import Img3 from "../assets/F3.jpg";
 import Img4 from "../assets/F4.jpg";
 import Img5 from "../assets/F5.jpg";
 import Img6 from "../assets/F6.jpg";
-import Circle from "../assets/Ellipse 22.png";
-import Polygon from "../assets/Polygon 13.png";
+import GridImg from "../assets/Grid-block.svg";
 import orangepolygon from "../assets/Polygon 12.png";
-import { motion } from "framer-motion";
+import Polygon from "../assets/Polygon 13.png";
+import Videocloudinary from "../pages/Videocloudinary";
 
 
 const Landing = () => {
@@ -108,7 +108,7 @@ const Landing = () => {
             <Image src={Circle} className="lg:hidden block"/>
           </div>
           <div className="lg:hidden block flex justify-center z-10 mt-6 mb-5 px-3">
-            <div className="flex gap-5">
+            <div className="flex gap-3 md:gap-5 lg:gap-5">
               {avatars.map((avatar, index) => (
                 <div key={index} className="relative flex">
                   <Avatar
