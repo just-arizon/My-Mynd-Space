@@ -6,7 +6,7 @@ import AboutImg from "../assets/Rectangle 7.svg";
 import { Card, CardHeader, CardBody, Image } from "@nextui-org/react";
 const about = () => {
   return (
-    <div className="flex lg:flex-row flex-col container mx-auto sm:px-6 lg:px-40 lg:my-24 my-12 px-5 lg:gap-20">
+    <div className="flex lg:flex-row flex-col lg:gap-20 my-40">
       <div className="block lg:hidden about_image flex justify-center mb-8 ">
           <Image src={AboutImg} alt="" className="" />
         </div>

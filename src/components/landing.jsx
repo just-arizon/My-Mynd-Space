@@ -35,7 +35,7 @@ const Landing = () => {
     animate={{ opacity: 1, y: 0 }} 
     exit={{ opacity: 0, y: -50 }} 
     transition={{ duration: 0.5, ease: 'easeInOut' }} 
-    className="container mx-auto sm:px-6 lg:px-12 my-6 lg:my-12 px-3 flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10 text-[#2D2D2D]">
+    className="flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10 text-[#2D2D2D]">
       <div className="w-full flex justify-start relative">
         <Image src={Circle} className="lg:hidden block absolute top-10"/>
       </div>

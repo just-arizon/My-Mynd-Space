@@ -47,7 +47,7 @@ const journey = () => {
     // },
   ];
   return (
-    <div className="container mx-auto  lg:px-40 my-16 lg:top-14 mx- relative top-36">
+    <div className="container my-40 lg:top-14 mx- relative top-36">
       <style>
         {`
         .custom-mask {
@@ -105,7 +105,7 @@ const journey = () => {
       </div>
 
 
-      <div className="flex bg- justify-between lg:hidden block absolute -top-64 w-full -z-10">
+      <div className="flex bg- justify-between lg:hidden block absolute -top-56 w-full -z-10">
       <div className=" flex flex-col gap-8 w-3/4 bg-pink- py-8">
           <div className="flex justify-start">
             <Avatar src={Img1} alt={``} className="object-cover  rounded-full" />

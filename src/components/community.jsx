@@ -6,7 +6,7 @@ import Img3 from "../assets/Rectangle 45.png";
 import Img4 from "../assets/Rectangle 46.png";
 const community = () => {
   return (
-    <div className="flex lg:flex-row flex-col container mx-auto sm:px-6 lg:px-40 lg:my-24 mb-40 px-5 lg:gap-20">
+    <div className="flex lg:flex-row flex-col lg:gap-20 my-40" >
       <div className="community_img flex-1 flex lg:flex-row flex-col  lg:pt-10 lg:block relative hidden">
         <div className="flex gap-5 mb-5">
             <Image src={Img1} alt="" className="lg:w-full relative rounded-b-none rounded-r-none" />

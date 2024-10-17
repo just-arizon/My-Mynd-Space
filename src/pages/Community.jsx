@@ -114,32 +114,36 @@ const Community = () => {
   return (
     <>
       <ToastContainer /> {/* Add the ToastContainer for notifications */}
-      <div className="flex justify-around absolute lg:top-40 bg-pink- w-full lg:gap-20 gap-28 lg:flex ">
-        <div className="bg-orange-">
-          <Image
-            alt=""
-            src={Svg1}
-            className="mt-5 lg:w-full relative lg:left-8 -left-2"
-          />
+      <div className="grid relative">
+        <div className="flex justify-around absolute lg:top- bg-orange- w-full lg:gap-20 gap-28 lg:flex 
+        
+        ">
+          <div className="bg-orange-">
+            <Image
+              alt=""
+              src={Svg1}
+              className="mt-5 lg:w-full relative lg:left- -left-2"
+            />
+          </div>
+          <div className="bg-">
+            <Image
+              alt=""
+              src={Svg2}
+              className="mt-5 lg:w-full relative lg:-right-"
+            />
+          </div>
         </div>
-        <div className="bg-">
-          <Image
-            alt=""
-            src={Svg2}
-            className="mt-5 lg:w-full relative lg:right-8"
-          />
-        </div>
-      </div>
-      <div className="flex justify-around absolute lg:top-80 bg-pink- w-full lg:gap-20 gap-36 lg:flex top-72">
-        <div className="bg-orange-">
-          <Image alt="" src={Svg3} className="mt-5 lg:w-full relative left-6" />
-        </div>
-        <div className="bg-">
-          <Image
-            alt=""
-            src={Svg4}
-            className="mt-5 lg:w-full relative right-2 lg:top-0 top-5"
-          />
+        <div className="flex justify-around absolute lg:top-80 bg-pink- w-full lg:gap-20 gap-36 lg:flex top-72">
+          <div className="bg-orange-">
+            <Image alt="" src={Svg3} className="mt-5 lg:w-full relative left-6 lg:-top-16" />
+          </div>
+          <div className="bg-">
+            <Image
+              alt=""
+              src={Svg4}
+              className="mt-5 lg:w-full relative right-2 lg:-top-16 top-5"
+            />
+          </div>
         </div>
       </div>
       <motion.div
@@ -147,7 +151,7 @@ const Community = () => {
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: -50 }}
         transition={{ duration: 1, ease: "easeInOut" }}
-        className="container mx-auto px-3 lg:px-8 my-2 lg:my-12 flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10"
+        className="flex flex-col gap-3 items-center justify-center lg:mb-28 mb-10"
       >
         <div className="lg:mt-20 mt-8 mb-8 flex justify-center">
           <div className="relative flex flex-row">
@@ -166,7 +170,7 @@ const Community = () => {
                   </span>
                 </h1>
               </div>
-              <div className="lg:w-3/4 lg:px-56 px-6 flex justify-center mb-5">
+              <div className="lg:w-11/12 lg:px-56 px-6 flex justify-center mb-5">
                 <small className="text-center ">
                   Discover the diverse experiences of our community members.
                   From struggles to triumphs, these real stories highlight our
@@ -229,7 +233,8 @@ const Community = () => {
           </div>
         </section>
 
-        <section className="flex lg:flex-col flex-col container mx-auto sm:px-6 lg:px-40 lg:py- pt- px-5 lg:gap-2 lg:mb-8 lg:mt-28 mt-52">
+        <section className="flex lg:flex-col flex-col mt-40 
+        container mx-auto sm:px-6 lg:px-40 px-5 ">
           <div className="flex flex-col justify- mb-8 mt-5 gap-5">
             <div className="flex gap-2 justify-center flex-col">
               <h1 className="text-[#2D2D2D] lg:text-3xl md:text-2xl text-2xl font-bold text-center">
@@ -303,11 +308,13 @@ const Community = () => {
           </div>
         </section>
 
-        <section className="">
+        <section className="
+        container mx-auto sm:px-6 lg:px-40 lg:my-12 mb-10 px-5  text-[#2D2D2D] ">
           <Explore />
         </section>
 
-        <section className="lg:px-40 px-5 py-14 bg-orange-">
+        <section className="mt-40 bg-orange- 
+        container mx-auto sm:px-6 lg:px-40 lg:my-12 px-5  text-[#2D2D2D] ">
           <div className="grid lg:grid-cols-2 md:grid-cols-2 items-center bg-pink- gap-10">
             <div className="container flex flex-col lg:pt-20">
               <div>

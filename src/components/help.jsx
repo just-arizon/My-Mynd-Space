@@ -31,7 +31,7 @@ const Help = () => {
   ];
 
   return (
-    <div className="container mx-auto sm:px-6 lg:px-40 my-28 px-3">
+    <div className="">
       <motion.h1 className="text-center font-bold lg:text-3xl md:text-2xl text-2xl mb-5">
         <h4>How We Help</h4>
         <div className="flex justify-center">

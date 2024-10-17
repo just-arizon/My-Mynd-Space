@@ -42,7 +42,7 @@ const Newsletter = () => {
   };
 
   return (
-    <div className="flex lg:flex-row flex-col mx-auto sm:px-6 lg:px-40 mt-48 mb-14 px-5 text-[#2D2D2D]">
+    <div className="flex lg:flex-row flex-col lg:my-40 text-[#2D2D2D]">
       <section className=" bg-orange-">
         <div className="flex lg:w-3/4">
           <div className="px-5 relative">

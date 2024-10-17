@@ -23,7 +23,7 @@ const footer = () => {
         {img: <RiTwitterXFill />, href: "#twitter"}
       ]
   return (
-    <div className='bg-[#003547] flex flex-col py-12'>
+    <div className='bg-[#003547] flex flex-col py-12 relative '>
       <div className="lg:flex justify-between container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="footer-logo flex flex-col justify-center border-b-2 lg:border-none border-b-[#fefefe] border-opacity-30 pb-7 ">
             <img src={Logo} alt="" className="w-32 py-5" />

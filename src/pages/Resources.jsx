@@ -29,7 +29,10 @@ const Resources = () => {
       animate={{ opacity: 1, y: 0 }} // Animate to its original position
       exit={{ opacity: 0, y: -50 }} // Exit to slightly above the view
       transition={{ duration: 0.5, ease: "easeInOut" }}
-      className=" px-auto sm:px- lg:px-36 px-12 my-10 lg:my-12 px-5 flex  flex-col  gap-3 justify-center lg:justify-start lg:mb-28 mb-10 bg-pink- w-full" // Smooth transition
+      className=" flex  flex-col  gap-3 justify-center lg:justify-start lg:mb-28 mb-10 bg-pink- w-full
+      
+      container mx-auto sm:px-6 lg:px-40 lg:my-12 mb-10 px-5  text-[#2D2D2D] relative
+      " // Smooth transition
     >
         <style>
         {`

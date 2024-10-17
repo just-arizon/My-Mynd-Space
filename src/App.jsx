@@ -97,11 +97,13 @@ export default function App() {
       </Route>
     )
   );
-
+  // 
   return (
     <div className=''>
       <Navbar />
-      <RouterProvider router={router} />
+      <div className="">
+        <RouterProvider router={router} />
+      </div>
       <Footer />
       <ScrollToTop />
     </div>
